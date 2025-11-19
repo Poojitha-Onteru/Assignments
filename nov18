@@ -1,0 +1,21 @@
+insert into customers values(100,'ram','shyam','singh','345678','flno 1','street 2','chennai','tamilnadu','524305','insdia','1165',123.45);
+update customers set creditlimit=creditlimit+creditlimit*0.1 ;
+delete from orders where orderdate<'2005-01-01';
+insert into products values('S10_1165','1989 chopper','Classic cars','1;10','xyz','Turnable front wheels; steering function; detailed interior',123,23,89);
+insert into payments values(293,'MA765516',curdate(),1200);
+update offices set phone='+44 21 7877 2091' where city='london';
+select productcode from products where productCode not in(select productCode from orderdetails);
+DELETE FROM products p WHERE NOT EXISTS (
+  SELECT 1
+  FROM orderdetails od
+  WHERE od.productCode = p.productCode
+);
+insert into employees values(231,'christina','Daniel','Dr','daniel@gmail.com','1',1002,'Developer');
+select * from customers where creditlimit>50000;
+select * from employees where officeCode=1;
+select * from orders where status='shipped' and orderDate like '2004%';
+select * from products where buyprice between 50 and 100;
+select * from employees where reportsTo='1143';
+select * from customers where city like 'S%';
+select * from orders where comments like '%urgent%';
+select * from payments where paymentDate like '2003%';
