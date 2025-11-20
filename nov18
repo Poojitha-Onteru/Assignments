@@ -33,3 +33,25 @@ select creditlimit from customers order by creditLimit desc limit 5;
 select productline from products order by productline asc; 
 select * from orders order by orderDate desc limit 10;
 select * from products order by productLine,buyPrice;
+select * from orders o inner join customers m on o.customerNumber=m.customerNumber;
+select e.employeenumber,m.employeenumber as manager from employees e left join employees m on e.employeeNumber=m.reportsTo;
+#select p.productName,o.quantityordered from products p inner join orderdetails o on o.productCode=p.productCode;
+SELECT p.productCode,p.productName,SUM(od.quantityOrdered) AS totalQuantity FROM products p inner JOIN orderdetails od ON p.productCode = od.productCode GROUP BY 
+p.productCode, p.productName;
+select c.customerNumber from customers c left join orders o on c.customerNumber=o.customerNumber;
+
+select current_time();
+select curdate();
+select now();
+select dayname(curdate());
+select dayname(now());
+select year('2020-12-09');
+select year(curdate())-2003;
+select count(*) from customers;
+select substr(customername,1,5) from customers;
+SELECT * FROM orders WHERE DATEDIFF(NOW(), orderDate) <= 30 ;
+select date_format(orderdate,'%d-%m-%y') from orders;
+select customerName,length(customername) from customers;
+select lastname,lower(lastname) from employees;
+select  ordernumber,productCode,quantityordered*priceeach as 'total bill' from orderdetails;
+select year(paymentdate),month(paymentdate) from payments;
