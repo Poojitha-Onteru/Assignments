@@ -39,7 +39,10 @@ select e.employeenumber,m.employeenumber as manager from employees e left join e
 SELECT p.productCode,p.productName,SUM(od.quantityOrdered) AS totalQuantity FROM products p inner JOIN orderdetails od ON p.productCode = od.productCode GROUP BY 
 p.productCode, p.productName;
 select c.customerNumber from customers c left join orders o on c.customerNumber=o.customerNumber;
-
+select * from offices o inner join employees e on o.officeCode=e.officeCode;
+select o.ordernumber,o.productcode,o.quantityOrdered,p.productname,p.quantityinstock,p.buyprice from orderdetails o inner join products p on o.productcode=p.productCode ;
+select e.firstname,e.lastname,o.city from offices o join employees e on o.officeCode=e.officeCode;
+select * from orders where status not like 'shipped';
 select current_time();
 select curdate();
 select now();
