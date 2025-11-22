@@ -1,0 +1,20 @@
+package com.practice1;
+
+public class Calculator implements ScientificCalculatorInterface {
+
+	@Override
+	public double power(double m, double n) {
+		return Math.pow(m,n);
+	}
+
+	@Override
+	public double squareRoot(double m) {
+		return Math.sqrt(m);
+	}
+
+	@Override
+	public double log(double m) {
+		return Math.log(m);
+	}
+
+}
