@@ -1,0 +1,12 @@
+package com.lambdapractice;
+
+public class PrintName {
+	public static void main(String args[])
+	{
+		Printer p=(String name)->System.out.println("name is:"+name);
+		p.printName("poojitha");
+	}
+}
+
+
+//write a lambda func to reverse a str of a functional interface havin

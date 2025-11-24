@@ -1,0 +1,12 @@
+package com.lambdapractice;
+
+public interface Payment {
+	
+	public void pay(double amount);
+	
+	public default void generatereceipt(double amount) {
+		System.out.println("Receipt generated successfully for the amount:"+amount);
+		
+	}
+
+}

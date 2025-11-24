@@ -1,0 +1,76 @@
+package com.practice1;
+
+abstract public class Account {
+	
+	private long accNum;
+	private String accHolder;
+	private String ifsc;
+	private String branch;
+	private String bankName;
+	private int pin;
+	public Account() {
+		super();
+	}
+	public Account(long accNum, String accHolder, String ifsc, String branch, String bankName) {
+		super();
+		this.accNum = accNum;
+		this.accHolder = accHolder;
+		this.ifsc = ifsc;
+		this.branch = branch;
+		this.bankName = bankName;
+		this.pin=generatePin();
+	}
+	
+	private int generatePin() {
+		int newPin=(int) (Math.random()*10000);
+		return newPin;
+	}
+	
+	public void setAccNum(long accNum) {
+		this.accNum = accNum;
+	}
+	public void setAccHolder(String accHolder) {
+		this.accHolder = accHolder;
+	}
+	public void setIfsc(String ifsc) {
+		this.ifsc = ifsc;
+	}
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+	public long getAccNum() {
+		return accNum;
+	}
+	public String getAccHolder() {
+		return accHolder;
+	}
+	public String getIfsc() {
+		return ifsc;
+	}
+	public String getBranch() {
+		return branch;
+	}
+	public String getBankName() {
+		return bankName;
+	}
+	public int getPin() {
+		return pin;
+	}
+	
+	
+	abstract public void withDraw(double amount);
+	
+	abstract public void deposit(double amount) ;
+	
+	@Override
+	public String toString() {
+		return "Account [accNum=" + accNum + ", accHolder=" + accHolder + ", ifsc=" + ifsc + ", branch=" + branch
+				+ ", bankName=" + bankName + ", pin=" + pin + "]";
+	}
+	
+	
+
+}

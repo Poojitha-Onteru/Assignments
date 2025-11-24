@@ -1,0 +1,18 @@
+package practice2.StringClasses;
+
+public class MutableString {
+
+	public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer();
+		sb.append("Pooji ");
+		sb.append("Sreya ");
+		sb.append("Siri ");
+		sb.append("Pooji ");
+		sb.append("Sreya ");
+		sb.append("Siri ");
+		System.out.println(sb);
+		System.out.println(sb.capacity());
+
+	}
+
+}

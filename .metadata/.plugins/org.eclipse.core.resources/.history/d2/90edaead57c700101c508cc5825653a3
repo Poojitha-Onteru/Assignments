@@ -1,0 +1,30 @@
+package practice2.StringClasses;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class MutableString {
+
+	public static void main(String[] args) {
+//		StringBuffer sb=new StringBuffer();
+//		System.out.println(LocalTime.now());
+//		sb.append("Pooji ");
+//		sb.append("Sreya ");
+//		sb.append("Siri ");
+//		sb.append("Pooji ");
+//		sb.append("Sreya ");
+//		sb.append("Siri ");
+//		sb.append("Siri ");
+//		System.out.println(sb);
+//		System.out.println(sb.capacity());
+//		sb.ensureCapacity(80);
+//		System.out.println(sb.capacity()); //70*2+2
+//		System.out.println(LocalTime.now());
+		
+		StringBuffer sbf=new StringBuffer("Poojitha onteru");
+		sbf.replace(8,11,"*");
+		System.out.println(sbf);
+
+	}
+
+}

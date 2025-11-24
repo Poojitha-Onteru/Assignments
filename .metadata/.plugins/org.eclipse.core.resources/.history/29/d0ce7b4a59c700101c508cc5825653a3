@@ -1,0 +1,49 @@
+package practice2.StringClasses;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.StringJoiner;
+import java.util.StringTokenizer;
+
+public class MutableString {
+
+	public static void main(String[] args) {
+//		StringBuffer sb=new StringBuffer();
+//		System.out.println(LocalTime.now());
+//		sb.append("Pooji ");
+//		sb.append("Sreya ");
+//		sb.append("Siri ");
+//		sb.append("Pooji ");
+//		sb.append("Sreya ");
+//		sb.append("Siri ");
+//		sb.append("Siri ");
+//		System.out.println(sb);
+//		System.out.println(sb.capacity());
+//		sb.ensureCapacity(80);
+//		System.out.println(sb.capacity()); //70*2+2
+//		System.out.println(LocalTime.now());
+		
+		System.out.println(LocalTime.now());
+		StringBuilder sbf=new StringBuilder("Poojitha onteru");
+		sbf.replace(8,14,"*");
+		System.out.println(sbf);
+		System.out.println(sbf.reverse());
+		System.out.println(sbf.lastIndexOf("ht"));
+		System.out.println(LocalTime.now());
+		
+		String str="apple,banana,kiwi,papaya,mango";
+		StringTokenizer tokenizer=new StringTokenizer(str,",");
+		while(tokenizer.hasMoreTokens()) {
+			System.out.println(tokenizer.nextToken());
+		}
+		
+		StringJoiner sj=new StringJoiner(",");
+		sj.add("pooji");
+		sj.add("onteru");
+		sj.add("deepu");
+		sj.add("kamakshi");
+		System.out.println(sj);
+		
+	}
+
+}

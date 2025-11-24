@@ -1,0 +1,6 @@
+package com.lambdapractice;
+
+@FunctionalInterface
+public interface SortingArray {
+	public void sort(int[]arr);
+}

@@ -1,0 +1,12 @@
+package practice2.StringClasses;
+
+public class TryWithResourceClass implements AutoCloseable {
+	
+	
+
+	@Override
+	public void close() throws Exception {
+		System.out.println("resource closed successfully..!");
+	}
+
+}

@@ -1,0 +1,5 @@
+package practice2.StringClasses;
+
+public class AgeNotSufficientException extends Exception {
+
+}

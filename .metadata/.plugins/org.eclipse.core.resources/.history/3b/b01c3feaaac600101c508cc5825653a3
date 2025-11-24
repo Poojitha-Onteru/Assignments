@@ -1,0 +1,9 @@
+package com.practice1;
+
+public class CurrentAccount extends Account{
+	
+	private double balance;
+	
+	
+
+}

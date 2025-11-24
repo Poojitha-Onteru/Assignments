@@ -1,0 +1,29 @@
+package practice2.StringClasses;
+
+public class DemoThrow {
+	
+	
+	public static void checkMethod(int a,int b[]) {
+		for(int i=0;i<b.length;i++) {
+			if(b[i]==0)
+				throw new ArithmeticException();
+			else if(i>=b.length)
+				throw new ArrayIndexOutOfBoundsException();
+			else
+				System.out.println(a/b[i]);
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		int a=51,b[]= {2,3,9,5};
+		try {
+			checkMethod(a,b);
+		}
+		catch(ArithmeticException ae) { ae.printStackTrace();}
+		catch(ArrayIndexOutOfBoundsException ae) {ae.printStackTrace();}
+		System.out.println("Application complited");
+		
+	}
+
+}

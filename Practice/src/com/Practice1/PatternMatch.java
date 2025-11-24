@@ -1,0 +1,19 @@
+package com.Practice1;
+
+import java.util.*;
+
+public class PatternMatch {
+
+	public static void main(String[] args) {
+		
+		for(int i=1;i<=4;i++) {
+			for(int spc=1;spc<=4-i;spc++)
+				System.out.print(" ");
+			for(int j=1;j<=i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println("");
+		}
+	}
+
+}

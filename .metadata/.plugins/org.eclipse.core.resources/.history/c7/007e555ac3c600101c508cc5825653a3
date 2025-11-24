@@ -1,0 +1,51 @@
+package com.practice1;
+
+import java.util.Scanner;
+
+public class BankingApp {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		SavingAccount sa=new SavingAccount(12345678,"poojitha", "sbi00n12345", "Buchi", "SBI", 1000);
+		
+//		System.out.println(sa);
+//		sa.withDraw(5000);
+//		sa.deposit(20000);
+//		sa.withDraw(5000);
+//		System.out.println(sa.checkBalance());
+		
+		//do while with switch case having all the operations and do operations until we enter exit
+		
+		System.out.println("1.SAVINGS ACCOUNT");
+		System.out.println("2.CURRENT ACCOUNT");
+		String str;
+		int i;
+		do {
+			System.out.println("ENTER 1 0R 2 :");
+			i=s.nextInt();
+			switch (i){
+				
+				case 1:
+					SavingAccount s1=new SavingAccount(1212343219, "thanu", "icic00234","Bangalore","ICICI", 25000);
+					System.out.println(s1);
+					s1.checkBalance();
+					s1.deposit(2000);
+					s1.getAccHolder();
+					s1.getBalance();
+					break;
+				case 2:
+					
+					break;
+				default:
+					System.out.println("enter either 1 or 2 as mentioned above");
+					break;
+			
+			
+			}
+			System.out.println("Enter exit or continue:");
+			str=s.next();
+		}while(!str.equalsIgnoreCase("exit"));
+
+	}
+
+}

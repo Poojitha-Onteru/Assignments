@@ -1,0 +1,14 @@
+package practice2.StringClasses;
+
+public class DemoExceptions {
+	public static void main(String[] args) {
+		int a=5,b=0;
+		try {
+			System.out.println(a/b);
+		}
+		catch(ArithmeticException d) {
+			d.printStackTrace();
+		}
+	}
+
+}

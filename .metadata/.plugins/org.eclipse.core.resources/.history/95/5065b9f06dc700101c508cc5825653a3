@@ -1,0 +1,17 @@
+package practice2.StringClasses;
+
+public class DemoThrow {
+	
+	
+	public static void checkMethod(int a,int b) {
+		
+	}
+
+	public static void main(String[] args) {
+		
+		int a=51,b[]= {2,3,4,5};
+		checkMethod(a,b);
+		System.out.println("Application complited");
+	}
+
+}

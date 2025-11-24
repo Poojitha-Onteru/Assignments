@@ -1,0 +1,14 @@
+package com.practice1;
+
+
+public class App {
+    public static void main(String[] args) {
+    	Employee emp=new Employee();
+    	emp.setEmpId(121);
+    	emp.setEmpname("Jaya");
+    	emp.setDesignation("Trainer");
+    	emp.setMobileNum("9898989878");
+    	System.out.println(emp);
+        
+    }
+}

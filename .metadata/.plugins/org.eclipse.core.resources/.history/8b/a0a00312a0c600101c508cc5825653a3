@@ -1,0 +1,52 @@
+package com.practice1;
+
+public class Employee {
+	private String empname;
+	private int empId;
+	private String designation;
+	private String mobileNum;
+	
+	public Employee() {
+		super();
+	}
+	
+	public Employee(String empname, int empid, String designation, String mobileNum) {
+		super();
+		Empname = empname;
+		Empid = empid;
+		Designation = designation;
+		this.mobileNum = mobileNum;
+	}
+	public String getEmpname() {
+		return Empname;
+	}
+	public void setEmpname(String empname) {
+		Empname = empname;
+	}
+	public int getEmpid() {
+		return Empid;
+	}
+	public void setEmpid(int empid) {
+		Empid = empid;
+	}
+	public String getDesignation() {
+		return Designation;
+	}
+	public void setDesignation(String designation) {
+		Designation = designation;
+	}
+	public String getMobileNum() {
+		return mobileNum;
+	}
+	public void setMobileNum(String mobileNum) {
+		this.mobileNum = mobileNum;
+	}
+	@Override
+	public String toString() {
+		return "Employee [Empname=" + Empname + ", Empid=" + Empid + ", Designation=" + Designation + ", mobileNum="
+				+ mobileNum + "]";
+	}
+	
+	
+
+}

@@ -1,0 +1,20 @@
+package practice2.StringClasses;
+
+import java.util.Arrays;
+
+public class DemoOnArraysClass {
+	public static void main(String args[]) {
+		int[] arr= {3,2,3,0,1};
+		String nums=Arrays.toString(arr);
+		System.out.println(nums.getClass());
+		Arrays.sort(arr);
+		for(int x:arr)
+			System.out.println(x);
+	}
+	
+	private void Syso() {
+		// TODO Auto-generated method stub
+
+	}
+	
+}

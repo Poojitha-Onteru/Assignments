@@ -1,0 +1,11 @@
+package com.lambdapractice;
+
+public class PrintName {
+	public static void main(String args[])
+	{
+		Printer p=(String name)->System.out.println("name is:"+name);
+		p.printName("poojitha");
+	}
+}
+
+

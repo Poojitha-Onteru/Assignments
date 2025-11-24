@@ -1,0 +1,11 @@
+package practice2.StringClasses;
+
+import java.util.Arrays;
+
+public class DemoOnArraysClass {
+	public static void main(String args[]) {
+		int[] arr= {1,2,3,4,5};
+		Arrays.toString(arr);
+		System.out.println(arr.getClass());
+	}
+}

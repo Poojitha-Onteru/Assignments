@@ -1,0 +1,15 @@
+package com.lambdapractice;
+
+public class MyCalculator {
+
+	
+	
+	
+	public static void main(String args[]) {
+		
+		//having parameters having the return type
+		Calculator mc=(int a, int b)-> a+b;
+		System.out.println(mc.add(2, 3));
+	}
+
+}

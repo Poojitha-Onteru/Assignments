@@ -1,0 +1,9 @@
+package com.lambdapractice;
+
+
+@FunctionalInterface
+public interface EvenOdd {
+	
+	public void isEvenOdd(int a);
+
+}

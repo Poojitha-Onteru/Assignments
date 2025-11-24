@@ -1,0 +1,27 @@
+package com.lambdapractice;
+
+import java.util.function.Supplier;
+
+public class DemoOnSupplier {
+
+	public static void main(String[] args) {
+		String name="Poojitha";
+		Supplier<String> supplier=()->name.toUpperCase();
+		System.out.println(supplier.get());
+		
+		
+		Supplier<Integer> ransomSupplier=()->{
+			return (int)Math.round(Math.random()*10000);
+			
+		};
+		System.out.println(ransomSupplier.get());
+		
+		int a=23,b=32;
+		Supplier<Integer> maxValue=()->{
+			return a>b?a:b;
+		};
+		
+		System.out.println(maxValue.get());
+	}
+
+}

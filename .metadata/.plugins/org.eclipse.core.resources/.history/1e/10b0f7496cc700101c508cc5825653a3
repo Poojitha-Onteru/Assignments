@@ -1,0 +1,30 @@
+package practice2.StringClasses;
+
+public class DemoExceptions {
+	
+	
+	public static void extractString() {
+		int a=5,b[]= {1,2,3,4};
+		String str1=null;
+		try {
+			System.out.println(str1.charAt(5));
+		}
+		
+		catch(NullPointerException ne) {
+			ne.printStackTrace();
+		}
+		
+		catch(RuntimeException d) {
+			d.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		extractString();
+		System.out.println("Closed Successfully...!");
+	}
+}

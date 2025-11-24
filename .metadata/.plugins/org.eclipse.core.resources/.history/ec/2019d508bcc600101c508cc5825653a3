@@ -1,0 +1,17 @@
+package com.practicequestions;
+
+public class ComplexAdd {
+	
+	public void add(int real,int imag) {
+		
+		
+	}
+	
+	public static void main(String argd[]) {
+		
+		ComplexNum c1=new ComplexNum(2,3);
+		ComplexNum c2=new ComplexNum(1,1);
+		//ComplexNum c3=new ComplecNum();
+	}
+
+}

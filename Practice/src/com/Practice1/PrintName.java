@@ -1,0 +1,18 @@
+package com.Practice1;
+import java.util.*;
+public class PrintName {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		char c;
+		
+		do {
+			System.out.println("Poojitha");
+			System.out.println("enter your choice:");
+			c=s.next().charAt(0);
+			
+		}while(c!='n');
+		
+		System.out.println("END..");
+	}
+
+}

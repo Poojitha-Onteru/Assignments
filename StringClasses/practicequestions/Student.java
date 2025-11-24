@@ -1,0 +1,7 @@
+package com.practicequestions;
+
+public class Student {
+	
+	
+
+}

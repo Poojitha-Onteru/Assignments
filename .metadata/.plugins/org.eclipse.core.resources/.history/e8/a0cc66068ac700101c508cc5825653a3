@@ -1,0 +1,7 @@
+package com.lambdapractice;
+
+@FunctionalInterface
+public interface ReverseStr {
+	public void stringReverse(String str);
+
+}

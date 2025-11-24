@@ -1,0 +1,21 @@
+package practice2.StringClasses;
+
+public class DemoExceptions {
+	
+	
+	public static void extractString() {
+		int a=5,b[]= {1,2,3,4};
+		String str=null;
+		if(str==null)
+			throw new NullPointerException();
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		extractString();
+		System.out.println("Closed Successfully...!");
+	}
+}

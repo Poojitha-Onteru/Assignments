@@ -1,0 +1,76 @@
+package practice2.StringClasses;
+
+public class Employee {
+	
+	private int eid;
+	private String ename;
+	private String emailid;
+	
+	
+	
+	public Employee() {
+		super();
+	}
+
+
+
+	public Employee(int eid, String ename, String emailid) {
+		super();
+		this.eid = eid;
+		this.ename = ename;
+		this.emailid = emailid;
+	}
+
+
+
+	public int getEid() {
+		return eid;
+	}
+
+
+
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+
+
+
+	public String getEname() {
+		return ename;
+	}
+
+
+
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+
+
+
+	public String getEmailid() {
+		return emailid;
+	}
+
+
+
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Employee [eid=" + eid + ", ename=" + ename + ", emailid=" + emailid + "]";
+	}
+	
+	
+	public String changeEmail(Employee empl,String newemail) {
+		empl.emailid=newemail;
+		return empl.getEmailid();
+		
+	}
+	
+	
+
+}

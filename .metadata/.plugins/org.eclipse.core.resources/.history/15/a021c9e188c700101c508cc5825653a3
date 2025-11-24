@@ -1,0 +1,6 @@
+package com.lambdapractice;
+
+@FunctionalInterface
+public interface Printer {
+	public void printName(String name);
+}

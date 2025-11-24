@@ -1,0 +1,11 @@
+package com.lambdapractice;
+
+public class MainClass {
+	public static void main(String args[]) {
+		CreditCard cc=new CreditCard();
+		cc.pay(4500);
+		UPI upi=new UPI();
+		upi.pay(-50);
+	}
+
+}

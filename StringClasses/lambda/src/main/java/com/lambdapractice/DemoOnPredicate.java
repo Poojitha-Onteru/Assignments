@@ -1,0 +1,41 @@
+package com.lambdapractice;
+
+import java.util.function.Predicate;
+
+public class DemoOnPredicate {
+
+	public static void main(String[] args) {
+		Predicate<Integer> isEven=(n)->n%2==0;
+		System.out.println(isEven.test(3));
+		
+		if(isEven.test(56))
+			System.out.println("Even");
+		else
+			System.out.println("Odd");	
+		System.out.println(isEven.test(97)?"Even":"Odd");
+		
+		Predicate<String> checkLength=(str)->str.length()>7;
+		System.out.println(checkLength.test("poojitha onteru"));
+		
+
+		Employee e1=new Employee(1,"pooji",55000);
+		Employee e2=new Employee(2,"lakshmi",12000);
+		Employee e3=new Employee(3,"hari",1000000);
+		Employee e4=new Employee(4,"lally",25000);
+		Employee e5=new Employee(5,"shreya",10000);
+		
+		
+		Predicate<Employee> checkSal=(emp)->{
+			return emp.getSal()>=50000;
+			
+		};
+		Employee[] err= {e1,e2,e3,e4,e5};
+		
+		for(Employee e:err)
+			System.out.println(checkSal.test(e)?"salary greater than 50k":"salary less than 50k");
+		
+		
+
+	}
+
+}

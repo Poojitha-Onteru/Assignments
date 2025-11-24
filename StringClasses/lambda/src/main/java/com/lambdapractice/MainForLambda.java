@@ -1,0 +1,45 @@
+package com.lambdapractice;
+
+import java.util.Arrays;
+
+public class MainForLambda {
+	public static void main(String args[])
+	{
+//		Printer p=(String name)->System.out.println("name is:"+name);
+//		p.printName("poojitha");
+//		
+//		
+//		ReverseStr rs=(String str)->{
+//			for(int i=str.length()-1;i>=0;i--) 
+//				System.out.print(str.charAt(i));
+//		};
+//		rs.stringReverse("Pooji");
+//		
+//		
+//		EvenOdd eo=(int a)->a%2==0?"even":"odd";
+//		System.out.println(eo.isEvenOdd(3));
+		
+//		SortingArray s=(String[] arr)->Arrays.sort(arr);
+		String[] arr= {"swati","swapna","pooji","abc"};
+//		s.sort(arr);
+//		for(String a:arr)
+//			System.out.println(a);
+//		
+		
+		SortingArray sr=(String[] str)->{
+			int[] ar=new int[str.length];
+			int i=0;
+			for(String s:str) {
+				ar[i]=s.length();
+				i++;
+			}
+			return ar;			
+		};
+		int[] ar;
+		int[] x=sr.findLength(arr);
+		for(int a:x)
+			System.out.println(a);		
+	}
+}
+
+

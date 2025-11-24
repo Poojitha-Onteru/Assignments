@@ -1,0 +1,16 @@
+package com.practice1;
+
+public class BankingApp {
+
+	public static void main(String[] args) {
+		
+		SavingAccount sa=new SavingAccount(12345678,"poojitha", "sbi00n12345", "Buchi", "SBI", 1000);
+		
+		System.out.println(sa);
+		sa.withDraw(5000);
+		sa.deposit(20000);
+		sa.checkBalance();
+
+	}
+
+}

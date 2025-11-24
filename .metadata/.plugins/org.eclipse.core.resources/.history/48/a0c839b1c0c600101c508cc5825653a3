@@ -1,0 +1,23 @@
+package com.practicequestions;
+
+public class ComplexAdd {
+	
+	public void add(ComplexNum c1,ComplexNum c2) {
+		ComplexNum c3=new ComplexNum();
+		c3.real=c1.real+c2.getReal();
+		c3.imag=c1.imag+c2.getImag();
+		System.out.println(c3.real+"+i"+c3.imag);
+	}
+	
+	public static void main(String argd[]) {
+		ComplexAdd ca=new ComplexAdd();
+		ComplexNum c1=new ComplexNum(2,3);
+		ComplexNum c2=new ComplexNum(2,3);
+		ca.add(c1, c2);
+		System.out.println(c1);
+		System.out.println(c2);
+		System.out.println(c1==c2);
+		System.out.println(c1.equala(c2));
+	}
+
+}
