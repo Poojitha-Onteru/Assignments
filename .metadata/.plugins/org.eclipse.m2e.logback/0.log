@@ -1894,3 +1894,15 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
 	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-11-24 17:17:34,916 [Worker-79: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lambdapractice:lambda:0.0.1-SNAPSHOT @ C:\Users\onteru.poojitha1\Downloads\syllabus\StringClasses\pom.xml.
+2025-11-24 17:17:35,194 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\onteru.poojitha1\Downloads\syllabus\StringClasses\src\main\resources
+2025-11-24 17:17:35,197 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\onteru.poojitha1\Downloads\syllabus\StringClasses\src\test\resources
+2025-11-24 17:17:35,321 [Worker-77: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-11-24 17:17:35,453 [Worker-77: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lambdapractice:lambda:0.0.1-SNAPSHOT @ C:\Users\onteru.poojitha1\Downloads\syllabus\StringClasses\pom.xml.
+2025-11-24 17:17:35,628 [Worker-77: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StringClasses/src/main/java
+2025-11-24 17:17:35,629 [Worker-77: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StringClasses/src/main/resources
+2025-11-24 17:17:35,630 [Worker-77: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /StringClasses/src/test/java
+2025-11-24 17:17:35,630 [Worker-77: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /StringClasses/src/test/resources
+2025-11-24 17:17:35,823 [Worker-77: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-11-24 17:17:35,944 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\onteru.poojitha1\Downloads\syllabus\StringClasses\src\main\resources
+2025-11-24 17:17:35,945 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\onteru.poojitha1\Downloads\syllabus\StringClasses\src\test\resources
