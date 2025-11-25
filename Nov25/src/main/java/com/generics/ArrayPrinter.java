@@ -1,0 +1,42 @@
+package com.generics;
+
+import java.util.Arrays;
+
+public class ArrayPrinter<T> {
+	private T[] arr;
+	
+	
+	
+	public ArrayPrinter() {
+		super();
+	}
+
+
+
+	public ArrayPrinter(T[] arr) {
+		super();
+		this.arr = (T[]) arr;
+	}
+
+
+
+	public T getArr() {
+		return (T) arr;
+	}
+
+
+
+	public void setArr(T arr) {
+		this.arr = (T[]) arr;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "ArrayPrinter [arr=" + Arrays.toString(arr) + "]";
+	}
+	
+	
+	
+}
