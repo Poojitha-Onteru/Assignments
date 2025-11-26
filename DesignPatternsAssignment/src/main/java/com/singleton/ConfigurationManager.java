@@ -1,6 +1,4 @@
-package com.designpatterns.DesignPatternsAssignment;
-
-import com.singleton.Logger;
+package com.singleton;
 
 public class ConfigurationManager {
 	

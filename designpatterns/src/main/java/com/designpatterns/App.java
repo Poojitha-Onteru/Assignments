@@ -43,10 +43,30 @@ public class App
 //    			.build();
 //    	System.out.println(pizza);
     	
-    	DrinkMaker tea=new TeaMaker();
-    	tea.prepareDrink();
+    	//Template method design pattern
+//    	DrinkMaker tea=new TeaMaker();
+//    	tea.prepareDrink();
     	
+    	//-------------------------Structural patterns--------------------------------
     	
+    	//Bridge Design Pettern
+//    	Video youtubeHD=new Youtube(new HDProcessing());
+//    	youtubeHD.playVideo();
+//    	
+//    	Video primeHD=new PrimeChannel(new HDProcessing());
+//    	primeHD.playVideo();
+//    	
+//    	Video youtubeHD1=new Youtube(new FourKProcessing());
+//    	youtubeHD1.playVideo();
+//    	
+//    	Video primeHD1=new PrimeChannel(new FourKProcessing());
+//    	primeHD1.playVideo();
+    	
+    	//Proxy Pattern
+    	Payment netbank=new NetBanking();
+    	netbank.pay("netbanking", 5000);
+    	Payment upi=new UpiPayment();
+    	upi.pay("upi", 7000);
     	
     	
     }

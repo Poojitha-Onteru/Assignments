@@ -1,0 +1,8 @@
+package com.designpatterns;
+
+public interface ProcessingQuality {
+	
+	public void processingVideo() ;
+
+
+}

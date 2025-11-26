@@ -1,7 +1,5 @@
 package com.singleton;
 
-import com.designpatterns.DesignPatternsAssignment.ConfigurationManager;
-
 public class MainClass {
 	
 	
@@ -22,7 +20,22 @@ public class MainClass {
 //		cm2.appSettings();
 		
 		//- Implement a DatabaseConnection class using Singleton. Prevent cloning and reflection from breaking the Singleton.
+//		DatabaseConnection db1=DatabaseConnection.getInstane();
+//		db1.getConnection();
+//		db1.isOpen();
+//		db1.isClose();
+//		DatabaseConnection db2=DatabaseConnection.getInstane();
+//		db2.getConnection();
+//		db2.isOpen();
+//		db2.isClose();
 		
+		//- Design a PrinterSpooler using Singleton that manages print queue. Add methods addJob() and processJob().
+		PrinterSpooler ps1=PrinterSpooler.getInstance();
+		ps1.addJob("Message 1");
+		ps1.processJob();
+		PrinterSpooler ps2=PrinterSpooler.getInstance();
+		ps2.addJob("Message 2");
+		ps2.processJob();
 	}
 
 }

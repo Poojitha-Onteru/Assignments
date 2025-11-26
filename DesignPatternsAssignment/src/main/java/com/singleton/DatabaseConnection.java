@@ -1,8 +1,14 @@
-package com.designpatterns.DesignPatternsAssignment;
+package com.singleton;
 
 public class DatabaseConnection {
 	private static DatabaseConnection instance;
 	
+	public DatabaseConnection() {
+		System.out.println("database connection is establishing");
+		System.out.println("wait for a while..");
+		System.out.println("Connection is established");
+		
+	}
 	
 	public static DatabaseConnection getInstane() {
 		if(instance!=null)
@@ -10,5 +16,19 @@ public class DatabaseConnection {
 		else
 			return instance=new DatabaseConnection();
 	}
+	
+	public static void getConnection() {
+		System.out.println("One connection is set..!");
+	}
+	
+	public static void isOpen() {
+		System.out.println("you can perform actions on datebase");
+	}
+	
+	public static void isClose() {
+		System.out.println("Connection closed");
+	}
+	
+	
 
 }

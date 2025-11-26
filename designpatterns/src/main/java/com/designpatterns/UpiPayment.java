@@ -1,0 +1,15 @@
+package com.designpatterns;
+
+public class UpiPayment implements Payment {
+
+	private CashPayment cp=new CashPayment();
+	@Override
+	public void pay(String str,double amt) {
+		
+		System.out.println("user validated");
+		System.out.println("otp entered correctly");
+		System.out.println("payment successfull");
+		cp.pay(str,amt);
+	}
+
+}
