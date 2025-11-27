@@ -1,0 +1,55 @@
+package com.lambdapractice;
+
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
+public class DemoObjectMethodReference {
+
+	public static void main(String[] args) {
+		
+		String myname="poojitha onteru";
+		Supplier<Integer> lengthUsingLambda=()->myname.length();
+		Supplier<Integer> lengthUsingMR=myname::length;
+		
+		System.out.println(lengthUsingLambda.get());
+		System.out.println(lengthUsingMR.get());
+		
+		Hello h=new Hello();
+		Supplier<String> helloLambda=()->h.sayHello();
+		Supplier<String> helloMR=h::sayHello;
+		System.out.println(helloLambda.get());
+		System.out.println(helloMR.get());
+		
+		NumberUtilMR nu=new NumberUtilMR();
+		Function<Integer,Integer> sqrMr=nu::squareNum;
+		System.out.println(sqrMr.apply(6));
+		
+		Predicate<Integer> isEvenMr=nu::isEven;
+		System.out.println(isEvenMr.test(8));
+		
+		Function<Double,Double> logMr=nu::log;
+		System.out.println(logMr.apply(8.0));
+		
+	}
+
+}
+class Hello{
+	public String sayHello() {
+		return "hello..!s";
+	}
+}
+
+class NumberUtilMR{
+	public int squareNum(int num) {
+		return num*num;
+	}
+	
+	public double log(double num) {
+		return Math.log(num);
+	}
+	
+	public boolean isEven(int num) {
+		return num%2==0;
+	}
+}

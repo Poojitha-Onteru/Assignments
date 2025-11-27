@@ -1,0 +1,11 @@
+package com.designpatterns;
+
+public class CashPayment implements Payment {
+
+	@Override
+	public void pay(double amt) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

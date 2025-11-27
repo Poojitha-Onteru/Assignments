@@ -1,0 +1,22 @@
+package com.datetimeprac;
+
+import java.util.Date;
+
+//import java.sql.Date;
+
+public class ConvertDate {
+
+	public static void main(String[] args) {
+		
+//		Date date=new Date(2025-1900,10,24);
+//		System.out.println(date);
+//		
+//		System.out.println(new java.util.Date());
+//		java.util.Date utildate=new java.util.Date();
+		Date today=new Date();
+		java.sql.Date sqlDate=new java.sql.Date(today.getDate());
+		
+
+	}
+
+}

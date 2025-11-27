@@ -1,0 +1,16 @@
+package com.designpatterns.DesignPatternsAssignment;
+
+import com.singleton.Logger;
+
+public class ConfigurationManager {
+	
+	private static ConfigurationManager instance;
+	
+	public static ConfigurationManager getInstane() {
+		if(instance!=null)
+			return instance;
+		else
+			return instance=new ConfigurationManager();
+	}
+
+}

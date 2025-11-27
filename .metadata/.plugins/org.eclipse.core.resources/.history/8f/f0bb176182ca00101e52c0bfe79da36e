@@ -1,0 +1,16 @@
+package com.designpatterns;
+
+public class NetBanking implements Payment {
+
+	private CashPayment cp=new CashPayment();
+	@Override
+	public void pay(String str,double amt) {
+		System.out.println("Enter Account details");
+		System.out.println("user validateion and authentication");
+		System.out.println("otp verified ");
+		System.out.println("payment successfull");
+		cp.pay(str,7000);
+
+	}
+
+}

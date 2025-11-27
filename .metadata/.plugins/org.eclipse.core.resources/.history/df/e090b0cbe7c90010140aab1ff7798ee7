@@ -1,0 +1,46 @@
+package com.designpatterns;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	//singleton pattern
+//    	DBConnection conn1=DBConnection.getInstance();
+//    	System.out.println(conn1.hashCode());
+//    	
+//    	DBConnection conn2=DBConnection.getInstance();
+//    	System.out.println(conn2.hashCode());
+//    	
+//    	DBConnection conn3=DBConnection.getInstance();
+//    	System.out.println(conn3.hashCode());
+    	
+    	//Factory pattern
+//    	Shape sf=ShapesFactory.getShape("Circle");
+//    	sf.draw();
+//    	
+//    	sf=ShapesFactory.getShape("Square");
+//    	sf.draw();
+    	
+    	//Abstract Factory Pattern
+//    	GUIFactory fac=new WinFactory();
+//    	Button button=fac.createButton();
+//    	CheckBox checkbox=fac.createCheckBox();
+//    	button.click();
+//    	checkbox.check();
+//    	
+//    	fac=new MacFactory();
+//    	Button button1=fac.createButton();
+//    	CheckBox checkbox1=fac.createCheckBox();
+//    	button1.click();
+//    	checkbox1.check();
+    	
+    	//Builder Pattern Method
+    	Pizza pizza=new Pizza.Builder("medium").cheese(true).olives(false).build();
+    	System.out.println(pizza);
+    	
+    	
+    	
+    	
+    }
+}

@@ -1,0 +1,5 @@
+package com.designpatterns;
+
+public interface Video {
+	public void playVideo();
+}

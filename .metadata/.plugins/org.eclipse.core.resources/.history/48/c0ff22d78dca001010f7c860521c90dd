@@ -1,0 +1,37 @@
+package com.collectionsmodule;
+
+import java.util.ArrayList;
+
+public class DemoOnArrayList {
+	
+	public static void main(String[] args) {
+		ArrayList alist=new ArrayList();
+		alist.add("Pooja");
+		alist.add(12);
+		//alist.addFirst(32);
+		alist.add(1, "onteru");
+		alist.add(true);
+		//alist.addFirst("end");
+		System.out.println(alist);
+		System.out.println(alist.get(0));
+		System.out.println(alist.contains(true));
+		//insertion order id preserved
+		alist.add("Pooja");
+		alist.add(12);
+		alist.add(1, "onteru");
+		alist.add(true);
+		alist.add(null);
+		System.out.println(alist);
+		
+		//generic array list
+		ArrayList<String> strlist=new ArrayList<>();
+		strlist.add("Onteru Poojitha");
+		strlist.add("Thanu");
+		strlist.add("Priya");
+		strlist.add("Deepak");
+		System.out.println(strlist);
+		for(String name:strlist)
+			System.out.println(name);
+	}
+
+}

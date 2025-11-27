@@ -1,0 +1,10 @@
+package com.designpatterns;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	DBConnection conn1=DBConnection.getInstance();
+    }
+}

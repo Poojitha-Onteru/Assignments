@@ -1,0 +1,19 @@
+package com.lambdapractice;
+
+public class DemoOnStaticMethodReference {
+
+
+	static class NumberUtil{
+		public static int squareNum(int num) {
+			return num*num;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		Function<Integer,Integer> squrFunc=(num)->NumberUtil.squareNum(num);
+	}
+	
+	
+
+}

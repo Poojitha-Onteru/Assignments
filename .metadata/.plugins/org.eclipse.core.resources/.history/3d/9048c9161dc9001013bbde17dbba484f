@@ -1,0 +1,12 @@
+package com.datetimeprac;
+
+import java.time.LocalDate;
+
+public class DemoOnLocalDate {
+
+	public static void main(String[] args) {
+		LacalDate today=LocalDate.now();
+
+	}
+
+}

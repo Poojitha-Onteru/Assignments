@@ -1,0 +1,41 @@
+package com.lambdapractice;
+
+import java.util.Arrays;
+import java.util.function.Consumer;
+
+public class DemoOnConsumer {
+
+	public static void main(String[] args) {
+		
+		int num=5;
+		Consumer<Integer> consume=(num1)->{
+			System.out.println(num1*num1);
+			
+		};
+		
+		consume.accept(num);
+		
+		Integer[] arr= {54,23,14,63,90,87};
+		
+		Consumer<Integer[]> arrSort=(ar)->{
+			Arrays.sort(ar);
+			System.out.println(Arrays.toString(ar));
+		};
+		arrSort.accept(arr);
+		
+		Employee e1=new Employee(1,"pooji",55000);
+		Employee e2=new Employee(2,"lakshmi",12000);
+		Employee e3=new Employee(3,"hari",1000000);
+		Employee e4=new Employee(4,"lally",25000);
+		Employee e5=new Employee(5,"shreya",10000);
+		//Employee[] err= {e1,e2,e3,e4,e5};
+		
+		Consumer<Employee[]> printConsumer=(err)->{
+			for(Employee e:err)
+				System.out.println(e.getEname());
+		};
+		Employee[] err= {e1,e2,e3,e4,e5};
+		 printConsumer.accept(err);
+	}
+
+}

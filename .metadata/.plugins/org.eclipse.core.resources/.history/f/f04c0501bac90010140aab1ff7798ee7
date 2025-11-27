@@ -1,0 +1,10 @@
+package com.generics;
+
+public class Container<T> {
+
+	public void setItem(T value) {
+		System.out.println(value);
+		
+	}
+
+}

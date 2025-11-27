@@ -1,0 +1,19 @@
+package com.datetimeprac;
+
+import java.time.LocalDateTime;
+
+public class DemoOnLocalDateTime {
+
+	public static void main(String[] args) {
+		LocalDateTime dt=LocalDateTime.now();
+		System.out.println(dt);
+		
+		
+		//convert string to local date time
+		String str="2024-11-24T16:44:58.418110100";
+		LocalDateTime ldt=LocalDateTime.parse(str);
+		System.out.println(ldt);
+
+	}
+
+}

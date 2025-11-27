@@ -1,0 +1,18 @@
+package com.singleton;
+
+public class MainClass {
+	
+	
+
+	public static void main(String[] args) {
+		Logger log1=Logger.loggerCreate();
+		 log1.log("Hello..!");
+		 System.out.println(log1.hashCode());
+		 Logger log2=Logger.loggerCreate();
+		 System.out.println(log2.hashCode());
+		 log2.log("world..!");
+		
+
+	}
+
+}

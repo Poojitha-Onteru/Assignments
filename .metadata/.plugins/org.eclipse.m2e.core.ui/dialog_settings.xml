@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\onteru.poojitha1\Downloads\syllabus\StreamsAPI"/>
 			<item value="C:\Users\onteru.poojitha1\Downloads\syllabus"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,17 +27,27 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.datetimeprac"/>
-			<item value="com.lambdapractice"/>
+			<item value="com.searchsort"/>
+			<item value="com.streams"/>
+			<item value="com.collectionsmodule"/>
+			<item value="com.finalclass.FinalclassesExample"/>
+			<item value="com.designpatterns.DesignPatternsAssignment"/>
+			<item value="com.designpatterns"/>
 		</list>
 		<list key="groupId">
-			<item value="com.datetimeprac"/>
-			<item value="com.lambdapractice"/>
+			<item value="com.searchsort"/>
+			<item value="com.streams"/>
+			<item value="com.collectionsmodule"/>
+			<item value="com.finalclass"/>
+			<item value="com.designpatterns"/>
 		</list>
 		<list key="artifactId">
-			<item value="datetime"/>
-			<item value="dateFunc"/>
-			<item value="lambda"/>
+			<item value="SearchingandSorting"/>
+			<item value="StreamsAPI"/>
+			<item value="CollectionsPractice"/>
+			<item value="FinalclassesExample"/>
+			<item value="DesignPatternsAssignment"/>
+			<item value="designpatterns"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -74,5 +85,20 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\onteru.poojitha1\Downloads\syllabus\StreamsAPI"/>
+			<item value="C:\Users\onteru.poojitha1\Downloads\syllabus\CollectionsPractice"/>
+			<item value="C:\Users\onteru.poojitha1\Downloads\syllabus\FinalclassesExample"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
 	</section>
 </section>

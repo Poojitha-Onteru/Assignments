@@ -1,0 +1,46 @@
+package com.streams;
+
+public class StackUsingArray {
+	
+	private static int[] arr=new int[10];
+	private static int top=-1;
+	
+	public static boolean isEmpty() {
+		if(top==-1)
+			return true;
+		return false;
+	}
+	
+	public static boolean isFull() {
+		return top==10;
+	}
+	
+	public static void push(int ele) {
+		if(isFull())
+			System.out.println("stack is full");
+		else
+			arr[++top]=ele;
+	}
+	
+	public static void pop() {
+		if(isEmpty())
+			System.out.println("stack underflow");
+		else
+			System.out.println(arr[top--]);
+			
+	}
+	
+	public static void diaplay() {
+		for(int i:arr)
+			System.out.println(i);
+	}
+	
+	
+	public static void main(String[] args) {
+		pop();
+		push(10);
+		display();
+
+	}
+
+}

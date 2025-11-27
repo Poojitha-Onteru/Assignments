@@ -1,0 +1,17 @@
+package com.designpatterns;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	DBConnection conn1=DBConnection.getInstance();
+    	System.out.println(conn1.hashCode());
+    	
+    	DBConnection conn2=DBConnection.getInstance();
+    	System.out.println(conn2.hashCode());
+    	
+    	DBConnection conn3=DBConnection.getInstance();
+    	System.out.println(conn3.hashCode());
+    }
+}

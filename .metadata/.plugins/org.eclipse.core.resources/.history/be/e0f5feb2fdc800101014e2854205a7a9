@@ -1,0 +1,47 @@
+package com.lambdapractice;
+
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public class DemoOnStaticMethodReference {
+
+
+	static class NumberUtil{
+		public static int squareNum(int num) {
+			return num*num;
+		}
+		
+		public static double log(double num) {
+			return Math.log(num);
+		}
+		
+		public static boolean isEven(int num) {
+			return num%2==0;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		Function<Integer,Integer> squFuncLambda=(num)->NumberUtil.squareNum(num);
+		Function<Integer,Integer> squareFuncMR=NumberUtil::squareNum;
+		System.out.println(squFuncLambda.apply(8));
+		System.out.println(squareFuncMR.apply(7));
+		
+		
+		Function<Double,Double> logFuncMR=NumberUtil::log;
+		Function<Double,Double> logFuncLambda=(num)->NumberUtil.log(num);
+		
+		System.out.println(logFuncMR.apply(8.0));
+		System.out.println(logFuncLambda.apply(6.0));
+		
+		
+		Predicate<Integer> isEvenLambda=(num)->NumberUtil.isEven(8);
+		Predicate<Integer> isEvenMR=NumberUtil::isEven;
+		
+		System.out.println(isEvenLambda.test(6));
+		System.out.println(isEvenMR.test(9));
+	}
+	
+	
+//static class string util and static string method to find length give logic to find lrngth of string using method references
+}

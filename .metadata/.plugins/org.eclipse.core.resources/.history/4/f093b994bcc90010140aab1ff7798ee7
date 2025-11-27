@@ -1,0 +1,6 @@
+package com.generics;
+
+public class Item {
+
+}
+//create order class which can take orders og different types of date

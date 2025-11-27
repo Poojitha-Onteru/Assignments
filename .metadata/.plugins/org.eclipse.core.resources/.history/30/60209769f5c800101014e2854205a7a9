@@ -1,0 +1,17 @@
+package com.lambdapractice;
+
+import java.util.function.Function;
+
+public class DemoOnFunction {
+	public static void main(String[] args) {
+		Function<Integer,Integer> sqrFunc=(num)->num*num;
+		
+		int arr[]= {2,3,5,4,7,6,8,9};
+		for(int i:arr)
+			System.out.println(sqrFunc.apply(i));
+		
+		
+		
+		
+	}
+}

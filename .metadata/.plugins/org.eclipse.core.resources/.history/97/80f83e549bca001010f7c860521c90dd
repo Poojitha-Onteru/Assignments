@@ -1,0 +1,115 @@
+package com.collectionsmodule;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+public class DemoOnArrayList {
+	
+	public static void main(String[] args) {
+//		ArrayList alist=new ArrayList();
+//		alist.add("Pooja");
+//		alist.add(12);
+//		//alist.addFirst(32);
+//		alist.add(1, "onteru");
+//		alist.add(true);
+//		//alist.addFirst("end");
+//		System.out.println(alist);
+//		System.out.println(alist.get(0));
+//		System.out.println(alist.contains(true));
+//		//insertion order id preserved
+//		alist.add("Pooja");
+//		alist.add(12);
+//		alist.add(1, "onteru");
+//		alist.add(true);
+//		alist.add(null);
+//		System.out.println(alist);
+//		
+//		//generic array list
+//		ArrayList<String> strlist=new ArrayList<>();
+//		strlist.add("Onteru Poojitha");
+//		strlist.add("Thanu");
+//		strlist.add("Priya");
+//		strlist.add("Deepak");
+//		System.out.println(strlist);
+//		
+//		//enhanced for loop
+//		System.out.println("-------printing using Enhanced for loop-----");
+//		for(String name:strlist)
+//			System.out.println(name);
+//		
+//		//using iterator to print details
+//		System.out.println("---printing using iterator---");
+//		Iterator<String> itr=strlist.iterator();
+//		while(itr.hasNext())
+//			System.out.println(itr.next());
+//		System.out.println("---printing using list iterator(Reverse is possible)---");
+//		ListIterator<String> litr=strlist.listIterator();
+//		while(litr.hasNext())
+//			System.out.println(litr.next());
+//		System.out.println("--------printing in backward direction using list iterator----------");
+//		while(litr.hasPrevious())
+//			System.out.println(litr.previous());
+//		System.out.println(strlist.hashCode());
+//		
+//		System.out.println("----for Each---");
+//		strlist.forEach(name->System.out.println(name));//using lambda
+//		strlist.forEach(System.out::println);//using Method reference
+//		
+//		strlist.remove(2);
+//		System.out.println(strlist);
+//		
+//		Integer[] arr= {11,12,13,14,15,16};
+//		Integer[] brr= {11,8,12,13,21,16,23};
+//		List<Integer> intlist1=new ArrayList<Integer>(Arrays.asList(arr));
+//		List<Integer> intlist2=new ArrayList<Integer>(Arrays.asList(brr));
+//		ArrayList<Integer> intlist=new ArrayList<>();
+//		intlist.add(1);
+//		intlist.add(2);
+//		intlist.add(3);
+//		intlist.add(4);
+//		intlist.add(5);
+//		intlist.add(6);
+//		System.out.println("---Before retainAll operation---"+intlist1);
+//		intlist1.retainAll(intlist2);
+//		System.out.println("---After retainAll operation---"+intlist1);
+//		System.out.println("----Sorting------");
+//		Collections.sort(strlist);
+//		strlist.forEach(System.out::println);
+//		
+//		ArrayList<String> clonedstrlist=(ArrayList<String>) strlist.clone();
+//		System.out.println(strlist.hashCode());
+//		System.out.println(clonedstrlist.hashCode());
+//		clonedstrlist.add("harsha");
+//		System.out.println(strlist.hashCode());
+//		System.out.println(clonedstrlist.hashCode());
+		
+		ArrayList<Student> stulist=new ArrayList<>();
+		stulist.add(new Student(120,"Thanu",24,"Nellore",27));
+		stulist.add(new Student(121,"siri",20,"Bangalore",28));
+		stulist.add(new Student(122,"priya",21,"Nellore",19));
+		stulist.add(new Student(123,"siri",22,"Bangalore",23));
+		stulist.add(new Student(124,"pooji",22,"Chennai",25));
+		stulist.add(new Student(125,"sreya",24,"Nellore",24));
+		stulist.add(new Student(126,"siri",20,"Bangalore",22));
+		stulist.add(new Student(127,"preethi",21,"Nellore",16));
+		stulist.add(new Student(128,"pooja",21,"Bangalore",24));
+		stulist.add(new Student(129,"poojitha",22,"Chennai",25));
+		
+		stulist.forEach(System.out::println);
+		
+		//Collections.sort(stulist);
+		
+		stulist.sort(new CityComparator());
+		System.out.println("---------After sorting------");
+		stulist.forEach(System.out::println);
+		
+		stulist.sort(new NameComparator());
+		System.out.println("---------After sorting------");
+		stulist.forEach(System.out::println);
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.designpatterns;
+
+public class BinFactory implements GUIFactory {
+
+	@Override
+	public Button createButton() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CheckBox createCheckBox() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

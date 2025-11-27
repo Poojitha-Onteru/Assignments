@@ -1,0 +1,55 @@
+package com.datetimeprac;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+//import java.sql.Date;
+
+public class ConvertDate {
+
+	public static void main(String[] args) throws ParseException {
+		
+//		Date date=new Date(2025-1900,10,24);
+//		System.out.println(date);
+//		
+//		System.out.println(new java.util.Date());
+//		java.util.Date utildate=new java.util.Date();
+		Date today=new Date();
+		java.sql.Date sqlDate=new java.sql.Date(today.getTime());
+		System.out.println(today);
+		System.out.println(sqlDate);
+		
+		//util to sql using simpledateformat
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+		String formatDate=sdf.format(today);
+		sqlDate=java.sql.Date.valueOf(formatDate);
+		System.out.println(sqlDate);
+		
+		
+		//convert given date string to util representation and sql representation
+		String strdate="15-08-2025";
+		SimpleDateFormat sdf2=new SimpleDateFormat("dd-MM-yyyy");
+		java.util.Date utildate=sdf2.parse(strdate);
+		java.sql.Date sqldate=new java.sql.Date(utildate.getTime());
+		System.out.println(utildate);
+		System.out.println(sqldate);
+		
+		//sql date to util
+		java.sql.Date sqldate2=java.sql.Date.valueOf("2025-09-08");
+		java.util.Date utilDate2=new java.util.Date(sqldate2.getTime());
+		java.util.Date utilDate=sqldate2;
+		System.out.println(sqldate2);
+		System.out.println(utilDate2);
+		System.out.println(utilDate);
+		
+		
+		//using simpledateformat to convert from sql date to util
+		java.sql.Date sqldate3=java.sql.Date.valueOf("2025-11-24");
+		String str=sqldate3.toString();
+		SimpleDateFormat sdf3=new SimpleDateFormat("yyyy-MM-dd");
+		System.out.println(sdf3.parseObject(str));
+		
+	}
+
+}

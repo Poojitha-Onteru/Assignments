@@ -1,0 +1,25 @@
+package com.singleton;
+
+import com.designpatterns.DesignPatternsAssignment.ConfigurationManager;
+
+public class MainClass {
+	
+	
+
+	public static void main(String[] args) {
+		//question1
+//		Logger log1=Logger.loggerCreate();
+//		log1.log("Hello..!");
+//		System.out.println(log1.hashCode());
+//		Logger log2=Logger.loggerCreate();
+//		System.out.println(log2.hashCode());
+//		log2.log("world..!");
+		
+		//question2
+		ConfigurationManager cm1=ConfigurationManager.getInstane();
+		cm1.appSettings();
+		ConfigurationManager cm2=ConfigurationManager.getInstane();
+		cm2.appSettings();
+	}
+
+}

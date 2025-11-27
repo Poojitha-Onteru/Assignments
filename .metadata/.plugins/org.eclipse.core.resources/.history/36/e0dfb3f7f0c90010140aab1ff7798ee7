@@ -1,0 +1,20 @@
+package com.singleton;
+
+public class Logger {
+	
+	private static String msg;
+	
+	private Logger() {
+		System.out.println("Logger is running..!");
+	}
+	
+	public static void log(String text) {
+		if(msg.isEmpty()) {
+			msg=text;
+			System.out.println(msg);
+		}
+		else
+			System.out.println(msg);
+	}
+
+}

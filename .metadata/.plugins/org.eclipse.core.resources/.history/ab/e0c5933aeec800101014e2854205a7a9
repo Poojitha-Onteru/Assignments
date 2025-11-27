@@ -1,0 +1,11 @@
+package com.lambdapractice;
+
+import java.util.function.Supplier;
+public class DemoOnSupplier {
+
+	public static void main(String[] args) {
+		Supplier<T>
+
+	}
+
+}

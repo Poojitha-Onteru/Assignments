@@ -1,0 +1,11 @@
+package com.designpatterns;
+
+public class Youtube implements Video {
+
+	@Override
+	public void playVideo() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

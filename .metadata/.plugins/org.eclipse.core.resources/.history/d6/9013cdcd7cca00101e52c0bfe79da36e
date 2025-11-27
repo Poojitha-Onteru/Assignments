@@ -1,0 +1,11 @@
+package com.designpatterns;
+
+public class PrimeChannel implements Video {
+
+	@Override
+	public void playVideo() {
+		System.out.println("Playing Video on Prime Channel");
+
+	}
+
+}

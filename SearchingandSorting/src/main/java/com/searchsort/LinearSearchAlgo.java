@@ -1,0 +1,22 @@
+package com.searchsort;
+
+import java.util.Scanner;
+
+public class LinearSearchAlgo {
+
+	public static void main(String[] args) {
+		int[] arr= {12,56,32,21,54,67,90,34,65,78,1,3,77,45};
+		System.out.println("Enter key element to search in the array:");
+		Scanner s=new Scanner(System.in);
+		int key=s.nextInt();
+		int i=0;
+		for(;i<arr.length;i++) {
+			if(arr[i]==key) {
+				System.out.println("element is found at position:"+i);
+				break;
+			}
+		}
+		if(i==arr.length)
+			System.out.println("elementis not present in array.. ");
+	}
+}

@@ -1,0 +1,81 @@
+1:32:50 Microsoft.NewBrowser_Popup
+1:32:50 Microsoft.BrowserList.AddBrowser
+1:32:50 Browser10 Insert active Tab10 at 0
+1:32:50 Tab10 StartNav251 #auto_toplevel
+1:32:50 Tab10 StartNav252 #typed
+1:32:50 Tab10 FinishNav251
+1:32:50 Tab10 PageLoad
+1:32:50 Tab10 FinishNav252
+1:32:50 Tab10 PageLoad
+1:32:52 Tab10 StartNav253 #typed
+1:32:52 Tab10 FinishNav253
+1:32:52 Tab10 PageLoad
+1:32:59 Tab10 StartNav254 #typed
+1:33:00 Tab10 FinishNav254
+1:33:00 Tab10 PageLoad
+1:33:39 Tab8 StartNav255 #typed
+1:33:39 Tab8 FinishNav255
+1:33:39 Tab8 PageLoad
+1:33:44 Microsoft.NewBrowser_Popup
+1:33:44 Microsoft.BrowserList.AddBrowser
+1:33:44 Browser11 Insert active Tab11 at 0
+1:33:44 Tab11 StartNav256 #auto_toplevel
+1:33:44 Tab11 StartNav257 #typed
+1:33:44 Tab11 FinishNav256
+1:33:44 Tab11 PageLoad
+1:33:44 Tab11 FinishNav257
+1:33:44 Tab11 PageLoad
+1:33:46 Tab11 StartNav258 #typed
+1:33:46 Tab11 FinishNav258
+1:33:46 Tab11 PageLoad
+1:33:56 Tab10 StartNav259 #typed
+1:33:56 Tab10 FinishNav259
+1:33:56 Tab10 PageLoad
+1:33:57 Tab10 StartNav260 #typed
+1:33:57 Tab10 FinishNav260
+1:33:57 Tab10 PageLoad
+1:33:59 Tab10 StartNav261 #typed
+1:33:59 Tab10 FinishNav261
+1:33:59 Tab10 PageLoad
+1:34:03 Tab10 StartNav262 #typed
+1:34:03 Tab10 FinishNav262
+1:34:03 Tab10 PageLoad
+1:35:04 Tab11 StartNav263 #typed
+1:35:04 Tab11 FinishNav263
+1:35:04 Tab11 PageLoad
+1:35:05 Tab11 StartNav264 #typed
+1:35:05 Tab11 FinishNav264
+1:35:05 Tab11 PageLoad
+1:35:06 Tab11 StartNav265 #typed
+1:35:06 Tab11 FinishNav265
+1:35:06 Tab11 PageLoad
+1:35:08 Tab11 StartNav266 #typed
+1:35:08 Tab11 FinishNav266
+1:35:08 Tab11 PageLoad
+1:35:10 Tab11 StartNav267 #typed
+1:35:10 Tab11 FinishNav267
+1:35:10 Tab11 PageLoad
+1:35:11 Tab11 StartNav268 #typed
+1:35:11 Tab11 FinishNav268
+1:35:11 Tab11 PageLoad
+1:35:13 Tab11 StartNav269 #typed
+1:35:13 Tab11 FinishNav269
+1:35:13 Tab11 PageLoad
+1:35:13 Tab11 StartNav270 #typed
+1:35:13 Tab11 FinishNav270
+1:35:13 Tab11 PageLoad
+1:35:14 Tab11 StartNav271 #typed
+1:35:14 Tab11 FinishNav271
+1:35:14 Tab11 PageLoad
+1:35:21 Tab11 StartNav272 #typed
+1:35:21 Tab11 FinishNav272
+1:35:21 Tab11 PageLoad
+1:35:23 Tab11 StartNav273 #typed
+1:35:23 Tab11 FinishNav273
+1:35:23 Tab11 PageLoad
+1:35:24 Tab11 StartNav274 #typed
+1:35:24 Tab11 FinishNav274
+1:35:24 Tab11 PageLoad
+1:35:30 Tab11 StartNav275 #typed
+1:35:30 Tab11 FinishNav275
+1:35:30 Tab11 PageLoad

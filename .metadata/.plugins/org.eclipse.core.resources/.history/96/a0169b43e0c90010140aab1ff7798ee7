@@ -1,0 +1,9 @@
+package com.designpatterns;
+
+public class GUIFactory {
+	
+	Button createButton();
+	CheckBox createCheckBox();
+	
+
+}

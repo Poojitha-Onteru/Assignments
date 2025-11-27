@@ -1,0 +1,23 @@
+package com.collectionsmodule;
+
+import java.util.HashSet;
+
+public class DemoOnHashSet {
+
+	public static void main(String[] args) {
+		//no duplicate elements
+		//no random access
+		//can insert only one null value
+		
+		
+		HashSet<Integer> hs=new HashSet<>();
+		hs.add(56);
+		hs.add(34);
+		hs.add(12);
+		hs.add(25);
+		hs.add(87);
+		hs.add(10);
+		
+	}
+
+}

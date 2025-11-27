@@ -1,0 +1,110 @@
+package com.streams;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+       Integer[] arr= {12,34,54,6,12,34,89,90,54,67,55,99,123};
+       Arrays.stream(arr).forEach(System.out::println);
+       //Terminal operations
+       List<Integer> lstream=Arrays.stream(arr).collect(Collectors.toList());
+       System.out.println(lstream);
+       
+       //create comparator 
+       Optional<Integer> minval=Arrays.stream(arr).min((a,b)->a-b);
+       System.out.println(minval.get());
+       
+       //another way
+       minval=Arrays.stream(arr).min(Integer::compare);
+       System.out.println(minval.get());
+       
+       //finding total no of elements
+       long count=Arrays.stream(arr).count();
+       System.out.println("total no of elements:"+count);
+       
+       //sum of array using reduce
+       int sum=Arrays.stream(arr).reduce(0, (a,b)->a+b);
+       System.out.println("sum of array elements:"+sum);
+       
+       System.out.println("Min value:"+Arrays.stream(arr).reduce(Integer.MAX_VALUE,(a,b)->a<b?a:b));
+       System.out.println("Max value:"+Arrays.stream(arr).reduce(Integer.MIN_VALUE,(a,b)->a>b?a:b));
+       
+       //Intermediate operations
+       //1.Filter
+       System.out.println("result after using filter");
+       Stream.of(arr).filter(num->num%2==0).forEach(System.out::println);
+       
+       //2.Map
+       System.out.println("Result after performing map");
+       Stream.of(arr).map(num->num+10).forEach(System.out::println);;
+       
+       //3.Limit
+       System.out.println("printing elements after using the limit");
+       Stream.of(arr).limit(5).forEach(System.out::println);
+       
+       
+       //4.Distinct
+       System.out.println("----------Distinct elements from our array-------");
+       Stream.of(arr).distinct().forEach(System.out::println);
+       long total=Stream.of(arr).distinct().count();
+       System.out.println("Total elements after distinct action:"+total);
+       
+       //5.skip
+       System.out.println("printing elements after using the skip");
+       Stream.of(arr).skip(5).forEach(System.out::println);
+       
+       //6.anyMatch
+       System.out.println(Stream.of(arr).anyMatch(num->num>100));
+       
+       //7.allMatch
+       System.out.println(Stream.of(arr).allMatch(num->num>125));
+       
+       //noneMatch
+       System.out.println(Stream.of(arr).noneMatch(num->num>200));
+       
+       //findFirst
+       System.out.println("-----findFirst----------");
+       System.out.println(Stream.of(arr).filter(num->num>25).findFirst().get());
+       
+       Integer[] nums={12,1,2,3,56,78,98,12,34,76,87,23,32,54};
+       List<Integer> numList=Arrays.asList(nums);
+       System.out.println("--------------");
+      numList.stream().filter(num->num%3==0)
+      .distinct()
+      .skip(2)
+      .limit(2)
+      .forEach(System.out::println);
+      
+      System.out.println("----------sorting ascending order-----------");
+      numList.stream().sorted().forEach(System.out::println);
+      
+      System.out.println("------------sort descending order");
+      numList.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+      
+      System.out.println("-----------using string array and streams-----------------");
+      //stream of strings
+      String[] strs= {"apple","guava","watermelon","mango","papaya","grapes","kiwi","pomegranate"};
+      Arrays.stream(strs).filter(name->name.length()>5).forEach(System.out::println);
+      
+      Arrays.stream(strs).filter(name->name.length()>5)
+      .filter(name->name.startsWith("s"))
+      .forEach(System.out::println);
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    }
+}

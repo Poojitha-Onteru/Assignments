@@ -1,0 +1,16 @@
+package com.lambdapractice;
+
+public class DemoOnStaticMethodReference {
+
+//	public static void main(String[] args) {
+//		
+//	}
+	static class NumberUtil{
+		public static int squareNum(int num) {
+			return num*num;
+		}
+	}
+	
+	
+
+}

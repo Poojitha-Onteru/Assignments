@@ -1,0 +1,14 @@
+package com.singleton;
+
+public class MainClass {
+	
+	
+
+	public static void main(String[] args) {
+		Logger log1=Logger.loggerCreate();
+		 Logger.log("Hello..!");
+		
+
+	}
+
+}

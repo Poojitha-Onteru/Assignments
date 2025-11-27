@@ -1,0 +1,17 @@
+package com.nov25.zonedtime;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+public class DemoOnZoneDateTime {
+
+	public static void main(String[] args) {
+		ZonedDateTime dateTime=ZonedDateTime.now();
+		System.out.println(dateTime);
+		System.out.println(dateTime.getOffset());
+		System.out.println(dateTime.getZone());
+		ZonedDateTime regionDateTime=ZonedDateTime.now(ZoneId.of("America/New_york"));
+		
+	}
+
+}

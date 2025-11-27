@@ -1,0 +1,30 @@
+package com.datetimeprac;
+
+import java.util.Date;
+
+public class DemoOnDateAndTime {
+
+	public static void main(String[] args) {
+		Date currentDate=new Date();
+		System.out.println(currentDate);
+		
+		long ms=System.currentTimeMillis();
+		System.out.println(ms);
+		
+		Date currentDateOfMS=new Date(ms);
+		System.out.println(currentDateOfMS);
+		
+		long msl=1934567890;
+		Date myDate=new Date(msl);
+		System.out.println(myDate);
+		
+		Date newDate=new Date(2024-1900,07,22);
+		System.out.println(newDate);
+		
+		System.out.println(currentDate.getDate());
+		System.out.println(currentDate.getMonth());
+		System.out.println(currentDate.getYear()+1900);
+
+	}
+
+}

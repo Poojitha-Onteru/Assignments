@@ -1,0 +1,11 @@
+package com.designpatterns;
+
+public class CashPayment implements Payment {
+
+	@Override
+	public void pay(String str,double amt) {
+		System.out.println("Amount is paid using "+str+" ---the toatl bill:"+amt);
+	}
+	
+
+}

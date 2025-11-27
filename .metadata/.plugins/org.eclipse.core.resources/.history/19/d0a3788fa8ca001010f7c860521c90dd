@@ -1,0 +1,23 @@
+package com.collectionsmodule;
+
+import java.util.Vector;
+
+public class DemoOnVector {
+	
+	public static void main(String[] args) {
+		
+		Vector<Integer> v=new Vector<>();
+		System.out.println(v.capacity());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

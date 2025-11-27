@@ -1,0 +1,62 @@
+package com.collectionsmodule;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class DemoOnArrayList {
+	
+	public static void main(String[] args) {
+		ArrayList alist=new ArrayList();
+		alist.add("Pooja");
+		alist.add(12);
+		//alist.addFirst(32);
+		alist.add(1, "onteru");
+		alist.add(true);
+		//alist.addFirst("end");
+		System.out.println(alist);
+		System.out.println(alist.get(0));
+		System.out.println(alist.contains(true));
+		//insertion order id preserved
+		alist.add("Pooja");
+		alist.add(12);
+		alist.add(1, "onteru");
+		alist.add(true);
+		alist.add(null);
+		System.out.println(alist);
+		
+		//generic array list
+		ArrayList<String> strlist=new ArrayList<>();
+		strlist.add("Onteru Poojitha");
+		strlist.add("Thanu");
+		strlist.add("Priya");
+		strlist.add("Deepak");
+		System.out.println(strlist);
+		
+		//enhanced for loop
+		System.out.println("-------printing using Enhanced for loop-----");
+		for(String name:strlist)
+			System.out.println(name);
+		
+		//using iterator to print details
+		System.out.println("---printing using iterator---");
+		Iterator<String> itr=strlist.iterator();
+		while(itr.hasNext())
+			System.out.println(itr.next());
+		System.out.println("---printing using list iterator(Reverse is possible)---");
+		ListIterator<String> litr=strlist.listIterator();
+		while(litr.hasNext())
+			System.out.println(litr.next());
+		System.out.println("--------printing in backward direction using list iterator----------");
+		while(litr.hasPrevious())
+			System.out.println(litr.previous());
+		System.out.println(strlist.hashCode());
+		
+		System.out.println("----for Each---");
+		strlist.forEach(name->System.out.println(name));
+		strlist.forEach(System.out::println);
+		
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.singleton;
+
+public class PrinterSpooler {
+	
+	public static PrinterSpooler instance;
+	
+	public PrinterSpooler() {
+		
+	}
+	
+	public static PrinterSpooler getInstance() {
+		if(instance!=null)
+			return instance;
+		else
+			return instance=new PrinterSpooler();
+	}
+
+}

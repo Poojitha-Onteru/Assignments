@@ -1,0 +1,33 @@
+package com.streams;
+
+public class MyQueueArray {
+	
+	private static int front=-1;
+	private static int rear=-1;
+	private static int[] queue=new int[10];
+	
+	public static boolean isEmpty() {
+		if(front==-1 && rear==-1)
+			return true;
+		return true;
+	}
+	
+	public static void insert(int ele) {
+		if(isEmpty()) {
+			queue[0]=ele;
+			front=0;
+			rear=0;
+		}
+		else {
+			queue[++rear]=ele;
+			System.out.println("element "+ele+" is added at "+rear);
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		System.out.println(isEmpty());
+	}
+
+}

@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=designpatterns/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.designpatterns{CheckBox.java[CheckBox" modifiers="513" timestamp="1764062188656"/>
+    <typeInfo handle="=designpatterns/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.designpatterns{GUIFactory.java[GUIFactory" modifiers="513" timestamp="1764062549261"/>
+    <typeInfo handle="=designpatterns/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.designpatterns{Payment.java[Payment" modifiers="513" timestamp="1764132039133"/>
+    <typeInfo handle="=CollectionsPractice/C:\/Program Files\/eclipse\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/21\/docs\/api\/=/=/maven.pomderived=/true=/&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1738195554000"/>
+</typeInfoHistroy>

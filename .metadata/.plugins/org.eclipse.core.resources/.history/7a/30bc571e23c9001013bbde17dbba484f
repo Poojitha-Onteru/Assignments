@@ -1,0 +1,32 @@
+package com.datetimeprac;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class DemoOnLocalDate {
+
+	public static void main(String[] args) {
+		LocalDate today=LocalDate.now();
+		System.out.println(today);
+		System.out.println(today.getDayOfMonth());
+		System.out.println(today.getDayOfYear());
+		System.out.println(today.getMonthValue());
+		System.out.println(today.getYear());
+		
+		LocalDate mydate=LocalDate.of(2025, 07, 06);
+		System.out.println(mydate);
+		
+		System.out.println(today.plusDays(3));
+		System.out.println(today.minusDays(5));
+		LocalDate d1=LocalDate.of(2025,06,06);
+		LocalDate d2=LocalDate.of(2023, 7,02);
+		System.out.println(	d1.compareTo(d2));
+		
+		today=LocalDate.now();
+		LocalDate dob=LocalDate.of(2003,07,06);
+		Period p=Period.between(today, dob);
+		System.out.println("my age is"+p.getYears()+" years "+p.getMonths()+" months "+p.getDays()+" days");
+		
+	}
+
+}

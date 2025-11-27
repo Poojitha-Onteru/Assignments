@@ -1,0 +1,28 @@
+package com.generics;
+
+import java.util.Arrays;
+
+public class DemoOnGenerics {
+
+	public static void main(String[] args) {
+		Container<String> c1=new Container<>();
+		c1.setItem("POoji");
+		System.out.println(c1.getItem());
+		
+		
+		Container<Student> c2=new Container<>();
+		Student s1=new Student();
+		c2.setItem(s1);
+		System.out.println(c2.getItem());
+		
+		Container<Integer> c3=new Container<Integer>();
+		c3.setItem(67);
+		System.out.println(c3.getItem());
+		
+		Container<Integer[]> c4=new Container<>();
+		Integer[] irr= {45,67,89,12};
+		c4.setItem(irr);
+		System.out.println(Arrays.toString(c4.getItem()));
+	}
+
+}

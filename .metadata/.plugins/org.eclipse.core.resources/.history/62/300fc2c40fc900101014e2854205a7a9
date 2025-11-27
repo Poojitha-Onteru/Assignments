@@ -1,0 +1,11 @@
+package com.lambdapractice;
+
+public class LambdaAssignment {
+	
+	public class StringFunctions{
+		public String strHavingA(String str) {
+			return str.containsIgnoreCase("a");
+		}
+	}
+
+}

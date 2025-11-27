@@ -1,0 +1,38 @@
+package com.collectionsmodule;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+public class DemoOnMaps {
+
+	public static void main(String[] args) {
+		HashMap<Integer,String> hm=new HashMap<Integer,String>();
+		hm.put(1,"Nellore");
+		hm.put(21,"bglr");
+		hm.put(12,"hyd");
+		hm.put(56,"Ap");
+		hm.put(46,"Pondi");
+		hm.put(34,"goa");
+		System.out.println(hm);
+		
+		hm.put(34, "Tamilnadu");
+		System.out.println(hm);
+		
+		System.out.println(hm.keySet());
+		System.out.println(hm.values());
+		System.out.println(hm.entrySet());
+		
+		System.out.println(hm.containsKey(34));
+		System.out.println(hm.containsValue("Nellore"));
+		System.out.println(hm.getOrDefault(10, "no Mapping"));
+		
+		Set<Integer> keyset=hm.keySet();
+		Iterator<Integer> itr=keyset.iterator();
+		while(itr.hasNext())
+			System.out.println(itr.next());
+		
+		
+	}
+
+}

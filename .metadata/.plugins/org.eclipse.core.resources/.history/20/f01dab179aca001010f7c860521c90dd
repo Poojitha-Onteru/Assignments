@@ -1,0 +1,89 @@
+package com.collectionsmodule;
+
+public class Student implements Comparable<Student> {
+	
+	private int stuid;
+	private String stuname;
+	private int age;
+	private String city;
+	private double marks;
+	
+	
+	public Student() {
+		super();
+	}
+	
+	public Student(int stuid, String stuname, int age, String city, double marks) {
+		super();
+		this.stuid = stuid;
+		this.stuname = stuname;
+		this.age = age;
+		this.city = city;
+		this.marks = marks;
+	}
+
+	public int getStuid() {
+		return stuid;
+	}
+
+	public void setStuid(int stuid) {
+		this.stuid = stuid;
+	}
+
+	public String getStuname() {
+		return stuname;
+	}
+
+	public void setStuname(String stuname) {
+		this.stuname = stuname;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public double getMarks() {
+		return marks;
+	}
+
+	public void setMarks(double marks) {
+		this.marks = marks;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [stuid=" + stuid + ", stuname=" + stuname + ", age=" + age + ", city=" + city + ", marks="
+				+ marks + "]";
+	}
+
+//	@Override
+//	public int compareTo(Student o) {
+//		
+//		return this.getAge()-o.age;
+//	}
+	
+//	@Override
+//	public int compareTo(Student o) {
+//		
+//		return (int)(this.getMarks()-o.marks);
+//	}
+	
+	@Override
+	public int compareTo(Student o) {
+		
+		return this.getStuname().compareTo(o.stuname);
+	}
+
+}

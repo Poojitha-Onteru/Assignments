@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;zonedtime&apos; to &apos;Nov25&apos;" description="Rename resource &apos;zonedtime&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/zonedtime" name="Nov25" stamp="1764041672409" updateReferences="true"/>
+</session>

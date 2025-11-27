@@ -1,0 +1,7 @@
+package com.lambdapractice;
+
+public interface Employee {
+	
+	public void sort(double sal);
+
+}

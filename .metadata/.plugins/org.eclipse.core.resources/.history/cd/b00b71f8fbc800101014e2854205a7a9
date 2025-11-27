@@ -1,0 +1,25 @@
+package com.lambdapractice;
+
+import java.util.function.Function;
+
+public class DemoOnStaticMethodReference {
+
+
+	static class NumberUtil{
+		public static int squareNum(int num) {
+			return num*num;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		Function<Integer,Integer> squFunc=(num)->NumberUtil.squareNum(num);
+		Function<Integer,Integer> squareFuncMR=NumberUtil::squareNum;
+		System.out.println(squFunc.apply(8));
+		System.out.println(squareFuncMR.apply(7));
+		
+	}
+	
+	
+
+}

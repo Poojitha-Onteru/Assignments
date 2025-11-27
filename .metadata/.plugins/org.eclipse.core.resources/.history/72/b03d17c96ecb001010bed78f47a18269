@@ -1,0 +1,71 @@
+package com.streams;
+
+public class MyQueueArray {
+	
+	private static int front=-1;
+	private static int rear=-1;
+	private static int[] queue=new int[10];
+	
+	public static boolean isEmpty() {
+		if(front==-1 && front>rear)
+			return true;
+		return false;
+	}
+	
+	public static boolean isFull() {
+		if(rear==queue.length-1)
+			return true;
+		return false;
+	}
+	
+	public static void insert(int ele) {
+		if(isFull())
+			System.out.println("queue is full..!");
+		if(rear==-1) {
+			front=0;
+			queue[++rear]=ele;
+		}
+		else {
+			queue[++rear]=ele;
+		}
+		System.out.println("element "+ele+" is added at "+rear);
+	}
+	
+	public static void delete() {
+		if(front>rear)
+		{
+			System.out.println("no data in queue");
+			front=rear-1;
+		}
+		else {
+			System.out.println("Elements deleted:"+queue[front++]);
+			if(front>rear)
+				front=rear=-1;
+		}
+	}
+	
+	public static void display() {
+		if(isEmpty())
+			System.out.println("no elements in queue.. rear"+rear+"front="+front);
+		else
+			for(int i=0;i<=rear;i++)
+				System.out.print(queue[i]+"-->");
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		System.out.println(isEmpty());
+		insert(10);
+		insert(20);
+		insert(30);
+		//System.out.println(isEmpty());
+		display();
+		delete();
+		delete();
+		delete();
+		display()
+		
+	}
+
+}

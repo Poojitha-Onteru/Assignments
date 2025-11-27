@@ -1,0 +1,33 @@
+package com.designpatterns;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	//singleton pattern
+//    	DBConnection conn1=DBConnection.getInstance();
+//    	System.out.println(conn1.hashCode());
+//    	
+//    	DBConnection conn2=DBConnection.getInstance();
+//    	System.out.println(conn2.hashCode());
+//    	
+//    	DBConnection conn3=DBConnection.getInstance();
+//    	System.out.println(conn3.hashCode());
+    	
+    	//Factory pattern
+//    	Shape sf=ShapesFactory.getShape("Circle");
+//    	sf.draw();
+//    	
+//    	sf=ShapesFactory.getShape("Square");
+//    	sf.draw();
+    	
+    	//Abstract Factory Pattern
+    	GUIFactory fac=new WinFactory();
+    	fac.createButton();
+    	fac.createCheckBox();
+    	fac=new MacFactory();
+    	fac.createButton();
+    	fac.createCheckBox();
+    }
+}

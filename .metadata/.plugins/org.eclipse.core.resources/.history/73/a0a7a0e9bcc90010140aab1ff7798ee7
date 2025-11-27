@@ -1,0 +1,18 @@
+package com.generics;
+
+public class Order {
+	private T item;
+
+	public Order() {
+		super();
+	}
+
+	public Order(T item) {
+		this.item = item;
+	}
+	
+	
+	
+	
+}
+//create order class which can take orders og different types of date

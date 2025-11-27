@@ -1,0 +1,11 @@
+package com.designpatterns;
+
+public class NetBanking implements Payment {
+
+	@Override
+	public void pay(double amt) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.collectionsmodule;
+
+import java.util.LinkedHashSet;
+
+public class DemoOnLinekdHashSet {
+
+	public static void main(String[] args) {
+		LinkedHashSet<Integer> lhs=new LinkedHashSet<>();
+		lhs.add(90);
+		lhs.add(10);
+		lhs.add(67);
+		lhs.add(67);
+		lhs.add(76);
+		lhs.add(null);
+		lhs.add(17);
+	}
+
+}

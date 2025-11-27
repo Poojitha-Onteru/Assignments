@@ -1,0 +1,81 @@
+package com.generics;
+
+import java.util.Arrays;
+
+public class DemoOnGenerics {
+	
+	
+	public static <T> void display(T data) {
+		System.out.println("Data is:"+data);
+	}
+	
+	public static <T,U> void add(T t1,U u1) {
+		System.out.println(t1+u1);
+	}
+
+	public static void main(String[] args) {
+//		Container<String> c1=new Container<>();
+//		c1.setItem("POoji");
+//		System.out.println(c1.getItem());
+//		
+//		
+//		Container<Student> c2=new Container<>();
+//		Student s1=new Student();
+//		c2.setItem(s1);
+//		System.out.println(c2.getItem());
+//		
+//		Container<Integer> c3=new Container<Integer>();
+//		c3.setItem(67);
+//		System.out.println(c3.getItem());
+//		
+//		Container<Integer[]> c4=new Container<>();
+//		Integer[] irr= {45,67,89,12};
+//		c4.setItem(irr);
+//		System.out.println(Arrays.toString(c4.getItem()));
+//		
+//		Pair<String,Double> p1=new Pair<>("distance in km",7.89);
+//		System.out.println(p1);
+//		Pair<String,Double> p2=new Pair<>("weight in kg",6.09);
+//		System.out.println(p2.getKey());
+//		Pair<Integer,String> p3=new Pair<>(22,"Age");
+//		System.out.println(p3.getValue());
+//		Student stu=new Student(12,"pooji","Java");
+//		Pair<Integer,Student> p4=new Pair<>(23,stu);
+//		System.out.println(p4.getValue());
+		
+//		Order<String> o1=new Order<String>("Mobile");
+//		Order<String> o2=new Order<String>("Laptop");
+//		System.out.println(o1);
+//		System.out.println(o2);
+//		
+//		Item item1=new Item(12,"TV",90000);
+//		Order<Item> o3=new Order<>(item1);
+//		System.out.println(o3);
+		
+//		//create array of items and create order for this item array
+//		Item item2=new Item(13,"Pillow",450);
+//		Item item3=new Item(14,"Bed",15000);
+//		Item item4=new Item(15,"Computer",90000);
+//		Item[] itemArr= {item1,item2,item3,item4};
+//		Order<Item[]> orderItemArray=new Order<Item[]>(itemArr);
+//		System.out.println(Arrays.toString(orderItemArray.getItem()));
+//		for(Item ite:itemArr)
+//			System.out.println(ite);
+		
+//		Integer nums[]= {2,34,5,6,7,8,9,1};
+//		String strs[]= {"pooji","apple","banana","Pomegranate"};
+//		ArrayPrinter<Integer> ap1=new ArrayPrinter<>(nums);
+//		ArrayPrinter<String> ap2=new ArrayPrinter<>(strs);
+//		System.out.println(ap1);
+//		System.out.println(ap2);
+		display("Pooji");
+		display(123);
+		display(true);
+		display(12.56);
+		
+		Item it5=new Item(11,"Mobile",90000);
+		display(it5);
+		
+		
+	}
+}

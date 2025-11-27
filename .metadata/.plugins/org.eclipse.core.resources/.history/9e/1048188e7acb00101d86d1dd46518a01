@@ -1,0 +1,19 @@
+package com.searchsort;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class BinarySearchAlgo {
+	public static void main(String[] args) {
+		int mid;
+		int[] arr= {12,56,32,21,54,67,90,34,65,78,1,3,77,45};
+		System.out.println("Enter key element to search in the array:");
+		Scanner s=new Scanner(System.in);
+		int key=s.nextInt();
+		Arrays.sort(arr);
+		for(int i:arr)
+			System.out.println(i);
+		mid=arr.length;
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.singleton;
+
+public class PrinterSpooler {
+	
+	public static PrinterSpooler instance;
+	
+	public PrinterSpooler() {
+		System.out.println("The printer is all set..!");
+	}
+	
+	public static PrinterSpooler getInstance() {
+		if(instance!=null)
+			return instance;
+		else
+			return instance=new PrinterSpooler();
+	}
+	
+	
+
+}

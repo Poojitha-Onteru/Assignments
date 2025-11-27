@@ -1,0 +1,9 @@
+package com.designpatterns;
+
+public class HDProcessing C{
+	
+	public void processingVideo() {
+		System.out.println(" with HD quality");
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.designpatterns;
+
+public class ProcessingQuality {
+	
+	public void processingSpeed(String speed) {
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.designpatterns;
+
+public class WinCheckBox implements CheckBox {
+
+}

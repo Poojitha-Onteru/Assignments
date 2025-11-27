@@ -1,0 +1,7 @@
+package com.collectionsmodule;
+
+import java.util.Comparator;
+
+public class MarksComparator implements Comparator<T> {
+
+}

@@ -1,0 +1,20 @@
+package com.datetimeprac;
+
+import java.time.LocalDate;
+
+public class DemoOnLocalDate {
+
+	public static void main(String[] args) {
+		LocalDate today=LocalDate.now();
+		System.out.println(today);
+		System.out.println(today.getDayOfMonth());
+		System.out.println(today.getDayOfYear());
+		System.out.println(today.getMonthValue());
+		System.out.println(today.getYear());
+		System.out.println(today.getDayOfMonth());
+		
+		
+		
+	}
+
+}

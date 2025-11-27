@@ -1,0 +1,18 @@
+package com.lambdapractice;
+
+import java.util.function.Consumer;
+
+public class DemoOnConsumer {
+
+	public static void main(String[] args) {
+		
+		int num=5;
+		Consumer<Integer> consume=(num1)->{
+			System.out.println(num1*num1);
+			
+		};
+		
+		consume.accept(num);
+	}
+
+}

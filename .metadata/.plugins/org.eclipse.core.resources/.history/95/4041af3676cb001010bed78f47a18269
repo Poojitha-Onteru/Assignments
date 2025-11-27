@@ -1,0 +1,73 @@
+package com.streams;
+
+public class MyCircularQueue {
+	
+	private static int front=-1;
+	private static int rear=-1;
+	private static int cq[]=new int[10];
+	
+	public static boolean isEmpty() {
+		if((front==-1 && rear==-1)) //return front==-1
+			return true;
+		return false;
+	}
+	
+	public static boolean isFull() {
+		if(rear==cq.length-1)           //return (rear+1)%10==front;
+			return true;
+		return false;
+	}
+	
+	public static void insert(int ele) {
+		if(isFull())
+			System.out.println("circular queue is full..no more insertion possible..");
+		else if(isEmpty()) {
+			front=0;
+			cq[++rear]=ele;
+		}
+		else {
+			if(rear==-1)
+				front=0;
+			rear=(rear+1)%10;
+			cq[rear]=ele;
+		}
+		System.out.println("The element "+ele+" inserted at "+rear);
+	}
+	
+	public static void delete() {
+		if(isEmpty())
+			System.out.println("queue is empty..!");
+		else {
+			System.out.println(cq[front]+" deleted");
+			if(front==rear)
+				front=rear=-1;
+			front=(front+1)%cq.length;
+		}
+	}
+	
+	public static void display() {
+		if(isEmpty())
+			System.out.println("queue is empty");
+		else {
+			for(int i=front;i<=rear;i=(i+1)%cq.length)
+				System.out.println(cq[i]+" at "+i);
+		}
+			
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		delete();
+		insert(10);
+		display();
+		insert(20);
+		insert(30);
+		display();
+		delete();
+		display();
+	}
+
+}

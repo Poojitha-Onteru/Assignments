@@ -1,0 +1,14 @@
+package com.nov25.zonedtime;
+
+import java.time.ZonedDateTime;
+
+public class DemoOnZoneDateTime {
+
+	public static void main(String[] args) {
+		ZonedDateTime dateTime=ZonedDateTime.now();
+		System.out.println(dateTime);
+		System.out.println(dateTime.getOffset());
+
+	}
+
+}

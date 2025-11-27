@@ -1,0 +1,12 @@
+package com.lambdapractice;
+
+public class DemoObjectMethodReference {
+
+	public static void main(String[] args) {
+		
+		String myname="poojitha onteru";
+		Supplier<String> lengthUsingLambda=()->name.length();
+
+	}
+
+}

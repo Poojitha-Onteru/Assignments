@@ -1,0 +1,19 @@
+package com.generics;
+
+public class DemoOnGenerics {
+
+	public static void main(String[] args) {
+		Container<String> c1=new Container<>();
+		c1.setItem("POoji");
+		System.out.println(c1.getItem());
+		
+		
+		Container<Student> c2=new Container<>();
+		Student s1=new Student();
+		c2.setItem(s1);
+		System.out.println(c2.getItem());
+		
+		
+	}
+
+}

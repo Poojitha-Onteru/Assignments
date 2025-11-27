@@ -1,0 +1,26 @@
+package com.lambdapractice;
+
+public class EmpSalSortLambda {
+	public static void main(String args[]) {
+		
+		Employee e1=new Employee(1,"pooji",55000);
+		Employee e2=new Employee(2,"lakshmi",12000);
+		Employee e2=new Employee(3,"hari",1000000);
+		Employee ep=(double[] sal)->{
+			for(int i=0;i<sal.length;i++) {
+				for(int j=i+1;j<sal.length;j++) {
+					if(sal[i]>sal[j]) {
+						double temp=sal[i];
+						sal[i]=sal[j];
+						sal[j]=temp;
+					}
+				}
+			}
+			for(double s:sal)
+				System.out.println(s);
+		};
+		double[] inp={24500,10000,15000,25000,5000};
+		ep.sort(inp);
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.streams;
+
+import java.util.Scanner;
+
+public class MyStack {
+	private static Node top=null;
+	
+	public static boolean isEmpty() {
+		return top==null;
+	}
+	
+	public static Node createNode() {
+		Scanner sc=new Scanner(System.in);
+		int data=sc.nextInt();
+		return new Node(data);
+	}
+	
+	public static void push(int ele) {
+		
+	}
+
+}

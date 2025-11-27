@@ -1,0 +1,12 @@
+package com.designpatterns;
+
+public class UpiPayment implements Payment {
+
+	CashPayment cp;
+	@Override
+	public void pay(double amt) {
+		System.out.println();
+
+	}
+
+}

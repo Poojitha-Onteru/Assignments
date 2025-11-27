@@ -1,0 +1,18 @@
+package com.collectionsmodule;
+
+import java.util.LinkedList;
+
+public class DemoOnLinkedList {
+
+	public static void main(String[] args) {
+		LinkedList<Integer> ll=new LinkedList<Integer>();
+		ll.add(23);
+		ll.add(12);
+		ll.add(67);
+		ll.add(1);
+		ll.add(45);
+		ll.add(90);
+		ll.add(14);
+	}
+
+}

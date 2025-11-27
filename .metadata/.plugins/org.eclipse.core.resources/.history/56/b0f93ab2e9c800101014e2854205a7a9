@@ -1,0 +1,8 @@
+package com.lambdapractice;
+
+@FunctionalInterface
+public interface Employee {
+	
+	public void sort(double[] sal);
+
+}
