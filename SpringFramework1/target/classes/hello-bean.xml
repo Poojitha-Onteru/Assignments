@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+	<context:property-placeholder location="classpath:data.properties"/>
+
+    <bean name="hello" class="com.spring.bean.Hello" scope="prototype">
+    	<!--  <property name="name" value="Pooji"></property>  -->
+    	<constructor-arg name="name" value="poojitha"></constructor-arg>
+    	
+    	
+    </bean>
+    
+    <bean name="person" class="com.spring.bean.Person" scope="prototype" >
+    
+    	<constructor-arg name="id" value="${Person.id}"></constructor-arg>
+    	<constructor-arg name="name" value="${Person.name}"></constructor-arg>
+    	<constructor-arg name="age" value="${Person.age}"></constructor-arg>
+    	<constructor-arg name="address" ref="addr"></constructor-arg> 
+     	<constructor-arg name="langs">
+    		<list>
+    			<value>#{'${Person.langs}'.split(',')}</value>	
+    		</list>
+    	</constructor-arg> 
+    </bean>
+    
+    <bean name="address" class="com.spring.bean.Address">
+    	<constructor-arg name="addrid" value="${Address.addrid}"></constructor-arg>
+    	<constructor-arg name="city" value="${Address.city}"></constructor-arg>
+    	<constructor-arg name="state" value="${Address.state}"></constructor-arg>
+    </bean>
+
+</beans>

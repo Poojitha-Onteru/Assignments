@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.prac.hibernate.Student" table="student_table">
+        <id name="stuId" column="sid">
+            <generator class="increment"/>
+        </id>
+        <property name="stuName" column="sname"/>
+        <property name="course" column="course"/>
+        <property name="mobile" column="mobile"/>
+        <property name="email" column="email"/>
+    </class>
+</hibernate-mapping>
