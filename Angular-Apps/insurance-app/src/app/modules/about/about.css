@@ -1,0 +1,94 @@
+/* HERO */
+.hero-banner {
+  background: radial-gradient(circle at top left, #ff7eb3, #ff758c, #ff6a88);
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 8px solid #fff;
+}
+
+.hero-banner h1 {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.hero-banner p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ABOUT */
+.about-section {
+  padding: 80px 0;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff6a88;
+}
+
+.intro {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* VALUES */
+.values-block {
+  background: #fdf2f8;
+  padding: 80px 0;
+}
+
+.value-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.value-box:hover {
+  transform: scale(1.05);
+}
+
+/* CTA */
+.cta-banner {
+  background: linear-gradient(135deg, #ff6a88, #ff758c);
+  color: #fff;
+  padding: 80px 30px;
+  border-radius: 0;
+  margin-top: 60px;
+}
+
+.cta-banner h2 {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.cta-banner p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* Animation */
+@keyframes floaty {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}

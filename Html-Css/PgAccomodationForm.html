@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Personal Details:</legend>
+            <label for="fname">Full Name:</label><input type="text" name="fname" id="fname" required pattern="[A-Za-z]"> <br><br>
+            <label for="mobile">Mobile:</label><input type="tel" name="mobile" id="mobile" required maxlength="10"> <br><br>
+            <label for="email">Email:</label><input type="email" name="email" id="email" rquired> <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Pg Details:</legend>
+            <label for="city">City</label>
+            <select>
+                <option>Bengalore</option>
+                <option>Hyderabad</option>
+                <option>Chennai</option>
+                <option>Nellore</option>
+            </select><br><br>
+            <label for="rtype">Room Type:</label>
+            <select>
+                <option value="Single Sharing">Single Sharing</option>
+                <option value="Double Sharing">Double Sharing</option>
+                <option value="Triple Sharing">Triple Sharing</option>
+                <option value="Four Sharing">Four Sharing</option>
+            </select><br><br>
+            <label for="facilities">Facilities:</label>
+            <select>
+                <option>Wifi</option>
+                <option>AC</option>
+                <option>Fridge</option>
+                <option>laundry</option>
+            </select><br><br>
+            <label for="rent">Monthly rent:</label>
+            <input type="range" min="20000" max="40000">
+        </fieldset>
+        <fieldset>
+            <legend><b>PG Address</b></legend>
+            <label for="addr">Complete Address</label>
+            <textarea cols="10" rows="3"></textarea><br><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Documents</b></legend>
+            <label for="proof">Upload Id Proof:</label>
+            <input type="file" name="proof" id="proof" accept=".pdf,.doc"><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Payment Process</b></legend>
+            <label for="payment">Payment Type:</label>
+            <select>
+                <option>Phone Pay</option>
+                <option>Google pay</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+            </select>
+            <br><b>
+        </fieldset>
+        <button type="submit" accesskey="s">Submit</button>
+        <button type="reset" accesskey="r">Reset</button>
+    </form>  
+</body>
+</html>
+<!--create form for pg acomodation regid
+1.personal details full name mandatory,mobilenumber mandatory 10 digits,email mandatory valid email
+2.pg details city,room type,facilities,monthly rent
+3.pg address complete address 
+4.Documants to submit upload,idproof,photo
+5.payment process 
+6.buttons submit alt+s 
+reset alt+r
+provide the tabindexs-->

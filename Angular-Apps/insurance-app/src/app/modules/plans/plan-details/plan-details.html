@@ -1,0 +1,54 @@
+<div class="container my-5" *ngIf="plan">
+  <div class="card plan-details-card shadow-lg p-5 text-center">
+    
+    <h2 class="text-primary fw-bold mb-4">
+      <i class="bi bi-shield-check"></i> {{plan.planName}}
+    </h2>
+    <p class="text-muted mb-4">{{plan.description}}</p>
+
+    <div class="row mt-4 g-4">
+      <div class="col-md-6">
+        <div class="info-box text-center p-4 rounded-3">
+          <h6 class="fw-bold mb-2"><i class="bi bi-tag-fill text-primary"></i> Type</h6>
+          <span class="text-dark">{{plan.type}}</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-box text-center p-4 rounded-3">
+          <h6 class="fw-bold mb-2"><i class="bi bi-cash-stack text-success"></i> Base Premium</h6>
+          <span class="fw-bold text-success fs-5">₹{{plan.baseAmt}}</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-box text-center p-4 rounded-3">
+          <h6 class="fw-bold mb-2"><i class="bi bi-hospital text-danger"></i> Coverage</h6>
+          <span class="fw-bold text-danger fs-5">₹{{plan.coverage}}</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-box text-center p-4 rounded-3">
+          <h6 class="fw-bold mb-2"><i class="bi bi-calendar-check text-primary"></i> Validity</h6>
+          <span class="text-dark">{{plan.validity}} Years</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column gap-3 mt-5">
+      <button class="btn btn-success btn-lg rounded-pill" (click)="buy()">
+        <i class="bi bi-bag-check"></i> Buy this Plan
+      </button>
+
+      <a routerLink="/plans" class="btn btn-outline-primary btn-lg rounded-pill">
+        <i class="bi bi-arrow-left"></i> Back to Plans
+      </a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!plan" class="text-center my-5 text-muted">
+  <div class="spinner-border text-primary"></div>
+  <p>Loading plan details...</p>
+</div>

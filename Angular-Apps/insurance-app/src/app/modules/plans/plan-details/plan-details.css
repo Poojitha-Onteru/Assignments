@@ -1,0 +1,39 @@
+.plan-details-card {
+  border: none;
+  background: #fdfdfd;
+  border-radius: 20px;
+}
+
+.info-box {
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.info-box:hover {
+  background: #eef6ff;
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.info-box h6 {
+  font-size: 16px;
+  color: #333;
+}
+
+.btn-success, .btn-outline-primary {
+  font-weight: 600;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background: #28a745;
+  transform: scale(1.03);
+}
+
+.btn-outline-primary:hover {
+  background: #2575fc;
+  color: #fff;
+  transform: scale(1.03);
+}

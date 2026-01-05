@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(226, 199, 171);
+    align-content: center;
+    padding-left: 650px;
+}
+h1{
+    color:rgb(6, 73, 56);
+    padding-left: 100px;
+}
+
+tbody{
+    background-color: rgb(202, 154, 95);
+}
+input{
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+td{
+    font: bold;
+}
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
+select{
+    width: 100%;
+    box-sizing: border-box;
+}
+#food{
+    height: 60px;
+}
+
+.btn{
+    height: 40px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+}
+
+.btn:hover{
+    color:rgb(6, 73, 56);
+    background-color: rgb(226, 204, 204);
+    border-radius: 5px;
+}
+
+.custom-radio input{
+    margin-top: -20px;
+    height: 20px;
+    border-color: rgb(137, 105, 167);
+    color: aqua;
+    vertical-align: middle; 
+    accent-color: aqua;
+    
+}
+.custom-checkbox input{
+    margin-top: -20px;
+    height: 20px;
+    border-color: blueviolet;
+    color: aqua;
+    vertical-align: middle;
+    accent-color: aqua;
+}
+

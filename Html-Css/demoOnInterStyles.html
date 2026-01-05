@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+    <style>
+        h2~p{
+            color: blue;
+        } /*--General sibling styling*/
+        /* h2+p{ 
+            color: blue;
+        } Adjacent siblings*/
+        /* p{
+            color: rgb(4, 37, 26);
+            font-family: 'Times New Roman', Times, serif;
+            border: 3px dotted rgb(2, 137, 190);
+            font-style: italic;
+        } */
+
+        /* div p{
+            color: blueviolet;
+            border: 5px solid green;
+        } */
+        #id1{
+            font-size: 20px;
+            color: palevioletred;
+            border: 2px dotted rgb(99, 94, 91);
+            width: 50%;
+            border-radius: 10px;
+        }
+        .cls1{
+            color: rgb(88, 2, 2);
+            font-style: italic;
+        }
+
+        .box{
+            border: 2px solid crimson;
+            width: 100px;
+            height: 100px;
+            color: rgb(87, 54, 5);
+            background-color: yellowgreen;
+            border-radius: 15px;
+            border-left: 4px dotted black;
+            border-right: 4px dotted black;
+            padding: 50px;
+            padding-left: 70px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Heading with internal styling</h1>
+    <div>
+        <p>Paragraph above h1</p>
+        <h2>Adjacent siblings</h2>
+        <p>This is a paragraph with internal style on p tag1</p>
+        <p>This is a paragraph with internal style on p tag2</p>
+        
+    </div>
+    <div>
+        <p >This is internal styling paragraph div+p</p>
+    </div>
+
+    <div id="id1">
+        <p>This is id selector paragraph</p>
+        <h1>Heading tag with id selector</h1>
+    </div>
+    <div class="cls1" id="#id2">
+        <p>This is id selector paragraph id2</p>
+        <h1>Heading tag with id selector id2</h1>
+    </div>
+
+    <div class="box">
+        <p>box</p>
+    </div>
+</body>
+</html>

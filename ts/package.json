@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "formsdemo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon --exec npx tsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "tsx": "^4.21.0"
+  }
+}
